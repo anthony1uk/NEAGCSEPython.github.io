@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Algorithms</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/algorithms.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #67008E;
+        background: linear-gradient(135deg, #67008E, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li class="active">
+                            <a href="/algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Algorithms</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="algorithms">Algorithms</h1>
+<p>Below is a series of different programs that have pseudocode and flowcharts completed for them. Use them to try and relate your algorithm designs to your code.</p>
+
+<p>Click <a href="./docs/PseudocodeStructureOCR.pdf">here</a> to view the pseudocode code guide.</p>
+
+<p>Click <a href="./docs/FlowchartSymbols.pdf">here</a> to view the different flowchart symbols.</p>
+
+<h2 id="example-1---teddy-bears-program---sequencing">Example 1 - Teddy Bears Program - Sequencing</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">hours</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of hours worked: "</span><span class="p">))</span>
+<span class="n">bears</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of teddy bears made: "</span><span class="p">))</span>
+<span class="n">hourswage</span> <span class="o">=</span> <span class="n">hours</span> <span class="o">*</span> <span class="mi">7</span>
+<span class="n">bearswage</span> <span class="o">=</span> <span class="n">bears</span> <span class="o">*</span> <span class="mf">0.45</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">hourswage</span> <span class="o">+</span> <span class="n">bearswage</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Your total wage is: £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm2.png" /></td></tr>
+<tr>
+<td><b>Flowchart</b><br /><img src="./images/algorithm1.png" /></td>
+</tr>
+</table>
+
+<h2 id="example-2---water-temperature-program---selection">Example 2 - Water Temperature Program - Selection</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">fahrenheit</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the temperature of the water in fahrenheit: "</span><span class="p">))</span>
+<span class="n">centigrade</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahrenheit</span> <span class="err">–</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">centigrade</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Water Frozen"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">centigrade</span> <span class="o">&gt;=</span><span class="mi">100</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Water Boiling"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Water is neither frozen or boiling"</span><span class="p">)</span>
+</code></pre>
+</div>
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm4.png" /></td></tr>
+<tr>
+<td><b>Flowchart</b><br /><img src="./images/algorithm3.png" /></td>
+</tr>
+</table>
+
+<h2 id="example-3---average-calculator---iteration-for">Example 3 - Average Calculator - Iteration (FOR)</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"How many numbers do you want to enter? "</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">latest</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a number: "</span><span class="p">))</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">latest</span>
+<span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">numbers</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The total of the numbers was "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The average of the numbers was "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">average</span><span class="p">))</span>
+</code></pre>
+</div>
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm6.png" /></td></tr>
+<tr>
+<td colspan="2"><b>Flowchart</b><br /><img src="./images/algorithm5.png" /></td>
+</tr>
+</table>
+
+<h2 id="example-4---menu-selection---iteration-while">Example 4 - Menu Selection - Iteration (WHILE)</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"What would you like to do?"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"1. Play Game"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"2. Instructions"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"3. Quit"</span><span class="p">)</span>
+<span class="n">valid</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">while</span> <span class="n">valid</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+    <span class="n">option</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter which option you want: "</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">option</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">option</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">option</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">valid</span><span class="o">=</span><span class="bp">True</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Let's go"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm8.png" /></td></tr>
+<tr>
+<td><b>Flowchart</b><br /><img src="./images/algorithm7.png" /></td>
+</tr>
+</table>
+
+<h2 id="example-5---login-system---reading-from-a-file">Example 5 - Login System - Reading from a File</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">username</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter your username (email address): "</span><span class="p">)</span>
+<span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter your password: "</span><span class="p">)</span>
+<span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"Logins.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">found</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">details</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">username</span> <span class="ow">and</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">==</span> <span class="n">password</span><span class="p">:</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Email: "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Name: "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Address:</span><span class="se">\n</span><span class="s">"</span> <span class="o">+</span><span class="n">details</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="n">details</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="n">details</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span>
+<span class="k">if</span> <span class="n">found</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Incorrect login details entered"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm10.png" /></td></tr>
+<tr>
+<td colspan="2"><b>Flowchart</b><br /><img src="./images/algorithm9.png" /></td>
+</tr>
+</table>
+
+<h2 id="example-6---product-catalogue---writing-to-a-file">Example 6 - Product Catalogue - Writing to a File</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">another</span> <span class="o">=</span> <span class="s">"Y"</span>
+<span class="k">while</span> <span class="n">another</span> <span class="o">==</span> <span class="s">"Y"</span><span class="p">:</span>
+    <span class="n">barcode</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter an 8 digit barcode: "</span><span class="p">)</span>
+    <span class="n">description</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a product description: "</span><span class="p">)</span>
+    <span class="n">price</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a price: "</span><span class="p">)</span>
+    <span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"Products.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+    <span class="nb">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">barcode</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">description</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">price</span><span class="p">)</span>
+    <span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Product added to catalogue"</span><span class="p">)</span>
+    <span class="n">another</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Do you want to add another? Y/N "</span><span class="p">)</span>
+</code></pre>
+</div>
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm12.png" /></td></tr>
+<tr>
+<td colspan="2"><b>Flowchart</b><br /><img src="./images/algorithm11.png" /></td>
+</tr>
+</table>
+
+<h2 id="example-7---measurement-conversion---functions">Example 7 - Measurement Conversion - Functions</h2>
+
+<p><b>Python</b></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">mtokm</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+   <span class="n">answer</span> <span class="o">=</span> <span class="n">value</span><span class="o">*</span><span class="mf">1.6</span>
+   <span class="k">return</span> <span class="n">answer</span>
+
+<span class="k">def</span> <span class="nf">kmtom</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+   <span class="n">answer</span> <span class="o">=</span> <span class="n">value</span><span class="o">*</span><span class="mf">0.62</span>
+   <span class="k">return</span> <span class="n">answer</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"What conversion would you like to do?"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"1. Convert Miles to Kilometres"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"2. Convert Kilometres to Miles"</span><span class="p">)</span>
+<span class="n">option</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your measurement to convert: "</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">option</span><span class="o">==</span><span class="s">"1"</span><span class="p">:</span>
+   <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">" miles in KM is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mtokm</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
+<span class="k">elif</span> <span class="n">option</span><span class="o">==</span><span class="s">"2"</span><span class="p">:</span>
+   <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">" KM in miles is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">kmtom</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="k">print</span><span class="p">(</span><span class="s">"Please enter a valid selection"</span><span class="p">)</span>
+</code></pre>
+</div>
+<table class="table">
+<tr>
+<td><b>Pseudocode</b><br /><img src="./images/algorithm14.png" /></td></tr>
+<tr>
+<td colspan="2"><b>Flowchart</b><br /><img src="./images/algorithm13.png" /></td>
+</tr>
+</table>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017 - v1.1 - Ben Barnes and Tristan Kirkpatrick</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script>
+        trianglify("#67008E", "#5B3293");
+    </script>
+    <script>
+          if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+
+
+
+
+    </body>
+</html>

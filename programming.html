@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Program Examples</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/programming.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #67008E;
+        background: linear-gradient(135deg, #67008E, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Program Examples</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="inputting--outputting-data-in-python">Inputting &amp; Outputting Data in Python</h1>
+
+<h2 id="outputting-data">Outputting Data</h2>
+<p>If you want to display something on screen you can use the <code class="highlighter-rouge">print()</code> function. An example of code that prints to screen in IDLE is shown below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Hello World"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>This is what it would look like when run in IDLE:</p>
+
+<p><img src="images/outputting1.PNG" alt="Outputting1" /></p>
+
+<h2 id="inputting-data">Inputting Data</h2>
+<p>If you want the user to enter data into the program, you can use the <code class="highlighter-rouge">input()</code> function. An example of code that will ask the user to enter their name and display it on screen using <code class="highlighter-rouge">print()</code> is shown below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"What is your name? "</span><span class="p">)</span> <span class="c"># displays the message on screen and stores the input from the user in a variable called name</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>This is what it would look like when run in IDLE:</p>
+
+<p><img src="images/outputting2.png" alt="Outputting2" /></p>
+
+<h2 id="example-program-1---enter-a-word">Example program 1 - Enter a Word</h2>
+<p>The code for the program below will allow the user to enter a word and store it in a variable called word. It will then use the <code class="highlighter-rouge">print()</code> function to output the word that they entered.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">word</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a word "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"You entered the word "</span> <span class="o">+</span> <span class="n">word</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/outputting3.png" alt="Outputting3" /></p>
+
+<h2 id="example-program-2---address-program">Example program 2 - Address Program</h2>
+<p>The code for the program below will allow the user to enter various pieces of information and store them in different variables. The <code class="highlighter-rouge">print()</code> function is then used to output all of the information.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your house number: "</span><span class="p">)</span>
+<span class="n">street</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your street name: "</span><span class="p">)</span>
+<span class="n">town</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your town/city: "</span><span class="p">)</span>
+<span class="n">county</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your county: "</span><span class="p">)</span>
+<span class="n">postcode</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your postcode: "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Address Details:</span><span class="se">\n</span><span class="s">"</span> <span class="o">+</span> <span class="s">"Street: "</span> <span class="o">+</span> <span class="n">number</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">street</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">Town/City: "</span> <span class="o">+</span> <span class="n">town</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">County: "</span> <span class="o">+</span> <span class="n">county</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">Postcode: "</span> <span class="o">+</span> <span class="n">postcode</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/outputting4.png" alt="Outputting4" /></p>
+
+<p>You can concatenate (join together) variables with strings in a <code class="highlighter-rouge">print()</code> function. In the address example <code class="highlighter-rouge">print("Street: " + number + " " + street + "\nTown/City: " + town)</code> will combine the strings “Street” and “Town/City” with the variables number, street and town.</p>
+
+<p><code class="highlighter-rouge">\n</code> is used to start a new line when it is displayed on screen.</p>
+
+<h1 id="variables">Variables</h1>
+
+<p>A variable is used to temporarily store a piece of data.</p>
+
+<p>For example:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number1</span> <span class="o">=</span> <span class="mi">10</span>
+</code></pre>
+</div>
+
+<p>In the code above the variable is called <code class="highlighter-rouge">number1</code> and the value it is storing is 10. Variables can hold any type of data. Using variables makes it easier for people to understand what is going on.</p>
+
+<p>For example:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">cost</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">VAT</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">total_cost</span> <span class="o">=</span> <span class="n">cost</span> <span class="o">+</span> <span class="n">VAT</span>
+</code></pre>
+</div>
+
+<h2 id="casting-variables">Casting Variables</h2>
+<p>Python will automatically decide what type of data a variable should be, sometimes this isn’t right, therefore you will have to convert/cast variables to a different data type.</p>
+
+<h3 id="integer">Integer</h3>
+<p>The program below will multiply a number by 5. When data is input from the user it will store it as a string. You will need to convert the variable <code class="highlighter-rouge">number</code> to an <code class="highlighter-rouge">integer</code> before performing a calculation. An example of how you do this is shown below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a whole number "</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span> <span class="c">#converts the variable number to an integer and multiplies it by 5.</span>
+<span class="k">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="real--float">Real / Float</h3>
+<p>The program below will ask the user to enter their weight in kilograms (this could be a decimal) and convert it to pounds. You will need to convert the variable <code class="highlighter-rouge">kg</code> to a <code class="highlighter-rouge">float</code> before converting it. An example of how you do this is shown below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">kg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the weight in KG "</span><span class="p">)</span>
+<span class="n">pounds</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">kg</span><span class="p">)</span> <span class="o">*</span> <span class="mf">2.2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pounds</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h3 id="string">String</h3>
+<p>Using the program above, if you wanted to improve the print message so that it said <code class="highlighter-rouge">Your weight in pounds is X</code> you would need to convert the variable pounds to a <code class="highlighter-rouge">string</code> as it is currently a <code class="highlighter-rouge">float</code>.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Your weight in pounds is "</span> <span class="o">+</span> <span class="n">pounds</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>This is what would happen if you ran the code currently:</p>
+
+<p><img src="images/variables1.png" alt="Variables1" /></p>
+
+<p>This is because the variable pounds is a <code class="highlighter-rouge">float</code> and to be joined with a string in the print message it needs to be converted to a <code class="highlighter-rouge">string</code>, the code is below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"Your weight in pounds is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">pounds</span><span class="p">))</span>
+</code></pre>
+</div>
+<p>Now when run the code it will work correctly:</p>
+
+<p><img src="images/variables2.png" alt="Variables2" /></p>
+
+<h2 id="example-program-1---water-tank-capacity-program">Example program 1 - Water Tank Capacity Program</h2>
+<p>The code for the program below will allow the user to enter the height, width and depth of a water tank, then calculate and output the capacity.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#three variables that store the inputs as a decimal (float)</span>
+<span class="n">height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the tank height (cm): "</span><span class="p">))</span>
+<span class="n">width</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the tank width (cm): "</span><span class="p">))</span>
+<span class="n">depth</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the tank depth (cm): "</span><span class="p">))</span>
+<span class="c">#calculation to work out the capacity</span>
+<span class="n">capacity</span> <span class="o">=</span> <span class="p">(</span><span class="n">height</span> <span class="o">*</span> <span class="n">width</span> <span class="o">*</span> <span class="n">depth</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1000</span>
+<span class="c">#outputs the capacity of the water tank</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The tank holds"</span> <span class="o">+</span> <span class="nb">round</span><span class="p">(</span><span class="n">capacity</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="s">"litres of water"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>When run in IDLE:</p>
+
+<p><img src="images/variables3.png" alt="Variables3" /></p>
+
+<p>The code above rounds the variable capacity, to round a variable you use the <code class="highlighter-rouge">round()</code> function. You write the name of the variable followed by the number of decimal places e.g. <code class="highlighter-rouge">round(capacity,2)</code>.</p>
+
+<h2 id="example-program-2---cylinder-volume-program">Example program 2 - Cylinder Volume Program</h2>
+<p>The code for the program below will allow the radius and height of a circle, then calculate and output the volume and surface area.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#three variables that store the two inputs and also the value of pie</span>
+<span class="n">radius</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the cylinder radius: "</span><span class="p">))</span>
+<span class="n">height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the cylinder height: "</span><span class="p">))</span>
+<span class="n">pie</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="c">#calculations to work out the volume and surface area</span>
+<span class="n">volume</span> <span class="o">=</span> <span class="n">pie</span> <span class="o">*</span> <span class="p">(</span><span class="n">radius</span><span class="o">*</span><span class="n">radius</span><span class="p">)</span> <span class="o">*</span> <span class="n">height</span>
+<span class="n">surface</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">pie</span><span class="o">*</span><span class="p">(</span><span class="n">radius</span><span class="o">*</span><span class="n">radius</span><span class="p">)))</span><span class="o">+</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">pie</span><span class="o">*</span><span class="n">radius</span><span class="o">*</span><span class="n">height</span><span class="p">))</span>
+<span class="c">#outputs the volume and surface area of the cylinder</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The volume of your cylinder is"</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">volume</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s">"to 2 decimal places"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The surface area of your cylinder is"</span><span class="p">,</span><span class="nb">round</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span><span class="s">"to 2 decimal places"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>When run in IDLE:</p>
+
+<p><img src="images/variables4.png" alt="Variables4" /></p>
+
+<h1 id="selection-if-then-else">Selection (if, then, else)</h1>
+
+<p>Sometimes you will change what do you depending on the conditions.</p>
+
+<p>For example:
+IF you wake up in the morning and it is raining THEN you will take a coat to school OTHERWISE you wont.</p>
+
+<p>IF the day is a Saturday AND the alarm clock goes off THEN you might turn it off and stay in bed OTHERWISE you might get up.</p>
+
+<p>Life is full of decisions that you will make depending on certain conditions, computers are no different.</p>
+
+<h2 id="if-else">if-else</h2>
+
+<p>For a computer to make decisions based on a condition, you must use an IF statement, it has the following structure:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>if condition:
+	true
+	several instructions that are executed
+	if the calcualation evaluates to True
+else:
+	false
+	several instructions that are exectued
+	if the condition evaluates to False
+</code></pre>
+</div>
+
+<p>Consider the following IF statement:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age "</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"You are an adult"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"You are still a child"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>The IF statement explained:</p>
+<ul>
+  <li>after the <code class="highlighter-rouge">if</code> is the condition <code class="highlighter-rouge">age &gt;= 18</code> followed by a colon, this is checking to see if the age variable is more than or equal to 18.</li>
+  <li>after that line is code is the code that will only be run if that condition is <code class="highlighter-rouge">True</code>. If it is true it will print on screen <code class="highlighter-rouge">You are an adult</code>.</li>
+  <li>the word else then follows followed by a colon. The instructions underneath this are what will be run only if that condition is <code class="highlighter-rouge">False</code>. If it is false it will print on screen <code class="highlighter-rouge">You are still a child</code>.</li>
+</ul>
+
+<h1 id="if-elif-else">if-elif-else</h1>
+
+<p>An IF statement with an else will only allow you to check a single condition, however if you have more than one condition to check you can use <code class="highlighter-rouge">if..elif..else</code></p>
+
+<p>Consider the following IF statement:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">colour</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the colour of the traffic light "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">colour</span> <span class="o">==</span> <span class="s">"Red"</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"STOP"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">colour</span> <span class="o">==</span> <span class="s">"Amber"</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"GET READY TO STOP"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span><span class="p">(</span><span class="s">"GO"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>The IF statement explained:</p>
+<ul>
+  <li>the program first checks to see if the colour entered is <code class="highlighter-rouge">Red</code> and if it is will print <code class="highlighter-rouge">STOP</code>.</li>
+  <li>if the colour entered isn’t red it will go onto the next condition where the <code class="highlighter-rouge">elif</code> is and check if the colour is <code class="highlighter-rouge">Amber</code>. If it is then it will print <code class="highlighter-rouge">GET READY TO STOP</code></li>
+  <li>if neither conditions are met it will go to the <code class="highlighter-rouge">else</code> part of the code and print <code class="highlighter-rouge">GO</code>.</li>
+</ul>
+
+<p><strong>NOTE:</strong> It doesn’t need to use <code class="highlighter-rouge">elif</code> to see if the colour is <code class="highlighter-rouge">Green</code> as if it isn’t <code class="highlighter-rouge">Red</code> or <code class="highlighter-rouge">Amber</code> it must be <code class="highlighter-rouge">Green</code>, therefore you can just use <code class="highlighter-rouge">else</code> if there are not other options to consider.</p>
+
+<h2 id="example-program-1---capital-city">Example program 1 - Capital City</h2>
+<p>The code for the program below ask the user the capital city of England and display a suitable message depending on whether they enter <code class="highlighter-rouge">London</code>.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#asks the user to enter a city and stores it in a variable called city</span>
+<span class="n">city</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"What is the capital city of England? "</span><span class="p">)</span>
+<span class="c">#checks if the city variable has London stored in it</span>
+<span class="k">if</span> <span class="n">city</span><span class="o">==</span><span class="s">"London"</span><span class="p">:</span>
+	<span class="c">#displays correct if the condition is true</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Correct the capital city of England is London"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="c">#displays wrong if they have entered something else</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Wrong, try again"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>When run in IDLE:</p>
+
+<p><img src="images/selection1.png" alt="Selection1" /></p>
+
+<h2 id="example-program-2---grade-calculator-program">Example program 2 - Grade Calculator Program</h2>
+<p>The code for the program below will ask the user to enter a score on a test and then decide what grade they got.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a score between 0 and 100: "</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span><span class="mi">70</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">60</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">50</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">40</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade U"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>NOTE:</strong> When <code class="highlighter-rouge">elif</code> is used it will only check the next condition <code class="highlighter-rouge">if</code> the previous condition is false.</p>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/selection2.png" alt="Selection2" /></p>
+
+<h2 id="example-program-3---taxi-fare-calculator-program">Example program 3 - Taxi Fare Calculator Program</h2>
+<p>The code for the program below will calculate the fare for a taxi ride depending on the distance and number of passengers. It should add 50% onto the total if there are more than 5 passengers.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#two inputs asking for the distance and passengers</span>
+<span class="n">km</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the distance of the taxi ride in kilometres (KM): "</span><span class="p">))</span>
+<span class="n">passengers</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of passengers: "</span><span class="p">))</span>
+<span class="c">#calculation to work out the cost</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="p">((</span><span class="n">km</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
+<span class="c">#checks to see if the number of passengers is more than 5 so that the additional 50% cost can be added</span>
+<span class="k">if</span> <span class="n">passengers</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+	<span class="c">#calculates the extra cost if the condition is true</span>
+    <span class="n">cost</span> <span class="o">=</span> <span class="n">cost</span> <span class="o">*</span> <span class="mf">1.5</span>
+<span class="c">#displays the total cost of the journey</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The total cost of the journey for"</span><span class="p">,</span><span class="n">passengers</span><span class="p">,</span><span class="s">"passengers is £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost</span><span class="p">))</span>
+</code></pre>
+</div>
+<p><strong>Important Points to Note</strong></p>
+<ul>
+  <li>there is no <code class="highlighter-rouge">else</code> on this <code class="highlighter-rouge">if</code>, you do not need to have one. An if can just check a condition and do something if it is <code class="highlighter-rouge">True</code> and nothing if it is <code class="highlighter-rouge">False</code></li>
+  <li>the <code class="highlighter-rouge">print</code> code is not indented, this is because it is not part of the <code class="highlighter-rouge">if</code> and will display regardless of whether there are more than 5 passengers.</li>
+  <li>in the <code class="highlighter-rouge">print</code> command the cost is formatted to currency, this is done by writing <code class="highlighter-rouge">£{:.2f}".format(variable)</code></li>
+</ul>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/selection3.png" alt="Selection3" /></p>
+
+<h1 id="validating-data">Validating Data</h1>
+
+<h2 id="what-is-validation">What is Validation?</h2>
+<p>Validation is the process of checking to see if data that is entered meets a set of requirements, this does mean it will always stop incorrect data being entered. For example if you had to enter a telephone number, you could validate it and say it needs to be 11 digits starting with a 0. The user could enter 01234567891, this meets the requirements set, but does not mean it is a valid telephone number.</p>
+
+<p>There are some simple ways in which you can validate programs, these are:</p>
+<ul>
+  <li><strong>Type Check</strong> - checking the data is of a particular type before continuing</li>
+  <li><strong>Presence Check</strong> - checking that data is entered before continuing</li>
+  <li><strong>Range Check</strong> - checking that data is between two boundaries set</li>
+  <li><strong>Format Check</strong> - checking that data follows a set format</li>
+</ul>
+
+<h2 id="type-check-example">Type Check Example</h2>
+<p>In Python you can easily do a type check to check whether a value is a number or not a number, see the example below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a number "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">number</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"You entered a number"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"You didn't enter a number"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">variable.isdigit()</code> will return a value either <code class="highlighter-rouge">True</code> or <code class="highlighter-rouge">False</code> after checking to see if a variable is a number. You can then use an <code class="highlighter-rouge">If</code> to determine what to do.</p>
+
+<p>When run in IDLE:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/validation1.png" alt="Validation1" /></th>
+      <th><strong>Number entered</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/validation2.png" alt="Validation2" /></td>
+      <td><strong>Text entered</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="presence-check-example">Presence Check Example</h2>
+<p>In Visual Basic you can use the <code class="highlighter-rouge">len()</code> function to find the length of a variable or form control. You can then check to if the length is 0 and if it is this means nothing has been entered, see the example below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a number: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">number</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Please enter a number"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Welcome to the program"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>The <code class="highlighter-rouge">len()</code> function will return the length of the data stored in a variable. If the length is 0 this means nothing has been entered.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/validation3.png" alt="Validation3" /></th>
+      <th><strong>Nothing entered</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/validation4.png" alt="Validation4" /></td>
+      <td><strong>Something entered</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="range-check-example">Range Check Example</h2>
+<p>You can also validate data by making sure it is within a certain range. For example, entering a test score you could say that it must be between 0 and 100. An example of how you could use a range check is shown below:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a number between 1 and 100: "</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">number</span><span class="o">&gt;</span><span class="mi">0</span> <span class="ow">and</span> <span class="n">number</span><span class="o">&lt;=</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"You entered a valid number"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"You must enter a number between 1 and 100"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>To perform a range check you can simply use an <code class="highlighter-rouge">if</code> and then use <code class="highlighter-rouge">and</code> to connect two conditions together.</p>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/validation5.png" alt="Validation5" /></th>
+      <th><strong>Entered out of range</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/validation6.png" alt="Validation6" /></td>
+      <td><strong>Entered within range</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="format-check-example">Format Check Example</h2>
+<p>If you want to perform a format check in Python you will need to make use of a library. The <strong>Regular Expressions</strong> library allows you to set a pattern and then check to see if the data follows that pattern.</p>
+
+<p>Below are some examples of Regular Expressions patterns as well as what they mean:</p>
+
+<p><img src="images/validation7.png" alt="Validation7" /></p>
+
+<p>The program below will check if an email meets the right format requirements. For the purpose of this task the requirements are:</p>
+<ul>
+  <li>it must start with at least one alphanumeric character</li>
+  <li>followed by the @ sign</li>
+  <li>followed by at least one alphanumeric character</li>
+  <li>followed by a full stop (.)</li>
+  <li>followed by at least one alphanumeric character.</li>
+</ul>
+
+<p>The regular expression pattern that is needed to do this is:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="o">^</span><span class="p">[</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span>\<span class="err">@</span><span class="p">[</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span>\<span class="o">.</span><span class="p">[</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z0</span><span class="o">-</span><span class="mi">9</span><span class="p">]</span><span class="o">+</span><span class="err">$</span>
+</code></pre>
+</div>
+
+<p>The code you need to perform a format check is shown below:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter an email address: "</span><span class="p">)</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="s">"^[A-Za-z0-9]+</span><span class="err">\</span><span class="s">@[A-Za-z0-9]+</span><span class="err">\</span><span class="s">.[A-Za-z0-9]+$"</span>
+<span class="n">emailMatch</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">email</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">emailMatch</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"This is a valid email format"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"This is an invalid email format"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p><strong>How it works</strong></p>
+<ul>
+  <li><strong>line 1</strong> - imports the regular expressions library to be able to perform the format check</li>
+  <li><strong>line 1</strong> - declares a variable called email to store the email input by the user</li>
+  <li><strong>line 2</strong> - declares a variable called pattern to store the regular expression pattern that will be compared to the email address</li>
+  <li><strong>line 3</strong> - this is a function from the regular expressions library. It will see if the email address matches the pattern set. It will then store the result in the variable called <code class="highlighter-rouge">emailMatch</code></li>
+  <li><strong>line 4</strong> - this will check if the emailMatch has been successful</li>
+  <li><strong>line 5</strong> - if it is it will say it is a valid email</li>
+  <li><strong>line 7</strong> - if it isn’t it will say it is an invalid email</li>
+</ul>
+
+<p>This is what happens when the button is clicked:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/validation8.png" alt="Validation8" /></th>
+      <th><strong>Valid</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/validation9.png" alt="Validation9" /></td>
+      <td><strong>Invalid</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="iteration---count-controlled">Iteration - Count Controlled</h1>
+
+<p>Iteration is the process of repeating a process over and over. Often in programming you need to repeat a block of code several times.</p>
+
+<h2 id="for-loops">FOR Loops</h2>
+<p>A <code class="highlighter-rouge">for</code> loop is known as a count controlled loop, you should use it when you want to repeat a block of code for a set number of times.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/forloop1.png" alt="Forloop1" /></th>
+      <th><img src="images/forloop2.png" alt="Forloop2" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Code without a loop</td>
+      <td>Code using a loop</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>How the for loop works</strong></p>
+<ul>
+  <li>a <code class="highlighter-rouge">for</code> loop will repeat for a set number of times and it will repeat between two ranges. <code class="highlighter-rouge">range(min_value,max_value)</code> will repeat between the bottom and the top value but <strong>not</strong> include the top value.</li>
+  <li><code class="highlighter-rouge">range(1,5)</code> will repeat 4 times, 1,2,3,4 but not 5 as it doesn’t repeat for the maximum value.</li>
+  <li><code class="highlighter-rouge">x</code> is just a variable that is a counter and stores the number in the loop, this is useful if you need to use it in calculations.</li>
+</ul>
+
+<h2 id="example-program-1---name-repeater-program">Example Program 1 - Name Repeater Program</h2>
+<p>This program asks the user to enter their name and their age. It will then <code class="highlighter-rouge">print</code> their name for the number of times their age.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your name "</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your age "</span><span class="p">)</span>
+<span class="c">#the loop uses the age entered as the maximum value in the loop</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">age</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Your name is "</span> <span class="o">+</span> <span class="n">name</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/forloop3.png" alt="Forloop3" /></p>
+
+<h2 id="example-program-2---timestable-program">Example Program 2 - Timestable Program</h2>
+<p>This program will ask the user what timestable they want to learn, it will then calculate the timestables for that number. It makes use of the counter (x) in the loop to calculate the answer.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">timestable</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the timestable you wish to learn (1-12) "</span><span class="p">)</span>
+<span class="c"># loop that will repeat 13 times (0-12)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">13</span><span class="p">):</span>
+    <span class="c"># the answer uses x which increases each time to work out the answer</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="nb">int</span><span class="p">(</span><span class="n">timestable</span><span class="p">)</span>
+    <span class="c"># x is used in the print command to display what it is multiplying the number entered by</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">timestable</span> <span class="o">+</span> <span class="s">" x "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">" = "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">answer</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/forloop4.png" alt="Forloop4" /></p>
+
+<h2 id="example-program-3---total-calculator-program">Example Program 3 - Total Calculator Program</h2>
+<p>This program asks the user to enter a five digit number. It then uses sub-strings to add digits 1,3 and 5 together and subtract digits 2 and 4. This program combines using an <code class="highlighter-rouge">if</code> with a <code class="highlighter-rouge">for</code> loop.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a five digit number: "</span><span class="p">)</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c">#loop to repeat five times</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+	<span class="c">#x is used to see how many digits have been checked</span>
+	<span class="c">#if x is 0 this is the first time through the loop, therefore digit 1 is being checked, 2 is digit 3 and 4 is digit 5.</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">4</span><span class="p">:</span>
+	<span class="c">#if it is digit 1,3 or 5 then it will add the number to the total</span>
+	<span class="c">#the number is retrieved from the variable number by using x to get the correct digit</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+	<span class="c">#if it is digit 2 or 4 then it will subtract the number from the total</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+<span class="c">#the final total will be printed, this is after the loop has finished</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The final total is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/forloop5.png" alt="Forloop5" /></p>
+
+<p>The answer on this example is 15. This is because it will add the first, third and fifth digit to the total (5 + 6 + 9) which gives 20. It then subtracts digits 2 and 4 (3 + 2) from the total, therefore 20 - 5 to give 15.</p>
+
+<h2 id="example-4---finding-the-average-of-numbers-in-a-list">Example 4 - Finding the average of numbers in a list</h2>
+<p>This program has a list that contains test <code class="highlighter-rouge">scores</code>. The program will go through the list and add together all the numbers to get a total. It then works out the average of the test scores.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#a list called scores, that contains 5 test scores</span>
+<span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">10</span><span class="p">]</span>
+<span class="c">#the size of the list is found by using len, it will return 5</span>
+<span class="n">size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>
+<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c">#a loop that will repeat between 0 and the value of size</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">size</span><span class="p">):</span>
+    <span class="c">#it will use x from the loop to add the correct element from the list to the total</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">scores</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+<span class="c">#the loop has now finished, the average is calculated by dividing the total by the size</span>
+<span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">size</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The average of the numbers is: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">average</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/forloop6.png" alt="Forloop6" /></p>
+
+<p>This program gives the average of 9 based on the values in the scores list. This is because 10 + 12 + 7 + 6 + 10 = 45. This is then divided by the size of the list (5) to give 9.</p>
+
+<h1 id="iteration---condition-controlled">Iteration - Condition Controlled</h1>
+
+<p>Iteration is the process of repeating a process over and over. Often in programming you need to repeat a block of code several times.</p>
+
+<h2 id="while-loops">WHILE Loops</h2>
+
+<p>A <code class="highlighter-rouge">while</code> loop is known as a condition controlled loop, you should use it when you do not know how many times the code needs to repeat as you can say repeat <code class="highlighter-rouge">while</code> a condition is <code class="highlighter-rouge">True</code>.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">userentry</span><span class="o">=</span><span class="s">"y"</span>
+<span class="k">while</span> <span class="n">userentry</span><span class="o">!=</span><span class="s">"n"</span><span class="p">:</span>
+    <span class="n">userentry</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Play again? y/n "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Game over"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/whileloop1.png" alt="whileloop1" /></p>
+
+<p><strong>How the while loop works</strong></p>
+<ul>
+  <li>there is a condition after the word <code class="highlighter-rouge">while</code>, it works like an <code class="highlighter-rouge">if</code> condition. <code class="highlighter-rouge">while</code> the variable <code class="highlighter-rouge">userentry</code> is not equal to <code class="highlighter-rouge">n</code> the code inside the loop (that is indented) will repeat</li>
+  <li>when <code class="highlighter-rouge">n</code> is entered by the user, the loop will end and it will continue with the code after the loop (not indented). In this case it will <code class="highlighter-rouge">print</code> “Game Over”.</li>
+</ul>
+
+<h2 id="example-program-1---guess-the-number">Example Program 1 - Guess the Number</h2>
+<p>This program asks the user to guess the number, it will keep asking them to guess the number until they guess it correctly. Once they have guessed it correctly it will tell them how many attempts it took.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">answer</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">attempts</span><span class="o">=</span> <span class="mi">0</span>
+<span class="n">userentry</span><span class="o">=</span><span class="s">""</span>
+<span class="c">#a loop that repeats while the users guess is not the same as the answer</span>
+<span class="k">while</span> <span class="n">answer</span> <span class="o">!=</span> <span class="n">userentry</span><span class="p">:</span>
+    <span class="n">userentry</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a number between 1 and 20 "</span><span class="p">))</span>
+    <span class="c">#each time through the loop 1 is added to the number of attempts</span>
+    <span class="n">attempts</span><span class="o">=</span><span class="n">attempts</span><span class="o">+</span><span class="mi">1</span>
+<span class="c">#after the loop it will say how many attempts it took</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Well done you correctly guessed the number it took you "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">attempts</span><span class="p">)</span> <span class="o">+</span> <span class="s">" attempts"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/whileloop2.png" alt="whileloop2" /></p>
+
+<h2 id="example-program-2---adding-user-numbers-program">Example Program 2 - Adding User Numbers Program</h2>
+<p>This program asks the user to enter a number. It then asks them whether they want to enter another. If they do it will ask them another and add it to the previous number, it will keep doing this until they say they do not want to enter any more numbers. Finally it will output the total.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">another</span> <span class="o">=</span> <span class="s">"Y"</span>
+<span class="c">#the loop will repeat while the user types Y when asked if they want to enter another number</span>
+<span class="k">while</span> <span class="n">another</span> <span class="o">==</span> <span class="s">"Y"</span><span class="p">:</span>
+    <span class="c">#asks the user to enter a number</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a number to add to the total: "</span><span class="p">))</span>
+    <span class="c">#adds the number entered to the total</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">number</span>
+    <span class="c">#asks the user if they want to enter another number</span>
+    <span class="n">another</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Do you want to enter another number? Y/N "</span><span class="p">)</span>
+<span class="c">#after the loop ends it outputs the total</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The total of your numbers was"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">total</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/whileloop3.png" alt="whileloop3" /></p>
+
+<h1 id="file-reading">File Reading</h1>
+
+<p>Sometimes you will need to read data from a file to find information and then depending on what you find do something with it.</p>
+
+<p>The process of reading from a file is always the same. The only thing that changes is what file you are using and what you are looking for in that file.</p>
+
+<p>Below are the key steps to the process:</p>
+<ul>
+  <li>Open a connection to a file</li>
+  <li>Take input from the user to find out what you are looking for</li>
+  <li>Read through each line of the file</li>
+  <li>When you read a line split the information into a list (so you can check individual pieces of information)</li>
+  <li>Check if the piece of information entered by the user is in the line</li>
+  <li>If it is do whatever you need to do.</li>
+</ul>
+
+<h2 id="csv-files">CSV Files</h2>
+<p>When reading data from a file, the easiest file type to use is a CSV file, this stands for comma separated values.</p>
+
+<p>Consider the file below that contains a list of games for different consoles</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/reading1.png" alt="Reading1" /></th>
+      <th><img src="images/reading2.png" alt="Reading2" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CSV file as a text file</td>
+      <td>CSV file in Excel</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Each piece of data is separated by a comma. This means that when you split the information up you can say to the program split the information into the list every time you find a comma.</p>
+
+<p>This means you can then refer to elements of the list to extract single pieces of information. Imagine the list you have is called <code class="highlighter-rouge">games</code>, the second image above shows how you would reference the information. If you wanted the name of the game it would be <code class="highlighter-rouge">games[1]</code>, if you wanted to the rating it would be <code class="highlighter-rouge">games[3]</code></p>
+
+<h2 id="worked-example---file-reading---speeding-cars">Worked example - File Reading - Speeding Cars</h2>
+<p>Before creating a program to read data from a file you need to understand what data is in the file. In this example it will use a file called <code class="highlighter-rouge">cars.csv</code>, which is shown below:</p>
+
+<p><img src="images/reading3.png" alt="Reading3" /></p>
+
+<p>In this file there are two pieces of data, these are the car registration and the speed. When the data is split into a list, they can be referred to as element 0 for the registration and element 1 for the speed.</p>
+
+<p><strong>Step 1 - Saving the CSV file</strong></p>
+
+<p>You must always make sure the CSV file is saved in the same location as the Python file.</p>
+
+<p><strong>Step 2 - Creating a Connection to the file</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>This code will create a connection to the file <code class="highlighter-rouge">cars.csv</code> and <code class="highlighter-rouge">r</code> mode which stands for read. It can then be referred to as the variable name which is <code class="highlighter-rouge">file</code></p>
+
+<p><strong>Step 3 - Taking Input from the User</strong>
+In this program we need to find out the speed limit so we can compare it to the speed that the car is travelling to see if it is speeding, therefore we need to ask the user the speed limit.</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+</code></pre>
+</div>
+<p>The code so far now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p><strong>Step 4 - Reading through the file</strong>
+Now each line of the file needs to be checked, you will need to use a loop to do this.</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+</code></pre>
+</div>
+<p>The code so far now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+</code></pre>
+</div>
+
+<p><strong>Step 5 - Read a line from the file and split the data up</strong>
+Now we have a loop that will read each line in the file, we need to read one line at a time, and split the information up. We know it is a <code class="highlighter-rouge">csv</code> file and therefore each piece of data is separated by a comma. When it splits the line from the file it needs to store it in a list, the list below is called <code class="highlighter-rouge">details</code>. As the piece of information we need from the file is the <code class="highlighter-rouge">speed</code>, the program then takes element 1 from the list and stores it as speed</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">details</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+<span class="n">speed</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre>
+</div>
+<p>The code so far now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+	<span class="n">details</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+	<span class="n">speed</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<p><strong>Step 6 - Checking the Data</strong>
+The next stage is to check the data that we have read from the file. In this case we want to see if the speed is greater than (&gt;) the speed limit.</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
+</code></pre>
+</div>
+<p>The code so far now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+	<span class="n">details</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+	<span class="n">speed</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+	<span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
+</code></pre>
+</div>
+
+<p><strong>Step 7 - If the condition is met</strong>
+If the condition is met and in this case the car is speeding then you can type the code you want to run like you would for a normal <code class="highlighter-rouge">if</code> statement. In this example we want to display the information of the speeding cars.</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre>
+</div>
+<p>The final code looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+	<span class="n">details</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+	<span class="n">speed</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+	<span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<p>The finished program looks like this:</p>
+
+<p><img src="images/reading4.png" alt="Reading4" /></p>
+
+<h2 id="dealing-with-no-matches-found-in-the-file">Dealing with no matches found in the file</h2>
+<p>Sometimes the information you are looking for in a file might not be there, you will need to let the user know this.</p>
+
+<p>At the moment when you enter a speed limit where there are no cars speeding, the program does this:</p>
+
+<p><img src="images/reading5.png" alt="Reading5" /></p>
+
+<p>What it should do is display a message something like <code class="highlighter-rouge">There are no speeding cars</code>, as shown below:</p>
+
+<p><img src="images/reading6.png" alt="Reading6" /></p>
+
+<p><strong>How to do this</strong></p>
+<ol>
+  <li>Create a boolean variable at the start of the program called <code class="highlighter-rouge">found</code> and set it to <code class="highlighter-rouge">False</code>. This is because at the start of the program no matches have been found.
+    <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">found</span> <span class="o">=</span> <span class="bp">False</span>
+</code></pre>
+    </div>
+  </li>
+  <li>When a match has been found (inside the IF statement) add a line of code to change that variable to <code class="highlighter-rouge">True</code>.
+    <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
+ <span class="n">found</span><span class="o">=</span><span class="bp">True</span> <span class="c">#new line of code</span>
+ <span class="k">print</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</code></pre>
+    </div>
+  </li>
+  <li>After the <code class="highlighter-rouge">for</code> loop create an <code class="highlighter-rouge">if</code> that checks if <code class="highlighter-rouge">found==False</code>. If found is still False and it has been through the loop and read the whole file and it is still False this means that the information you have been looking for in the file has not been found.
+    <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+</code></pre>
+    </div>
+  </li>
+  <li>Finally code what you want to happen if there are no matches inside the <code class="highlighter-rouge">if</code>.
+    <div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+ <span class="k">print</span><span class="p">(</span><span class="s">"There are no speeding cars"</span><span class="p">)</span>
+</code></pre>
+    </div>
+  </li>
+</ol>
+
+<p>The final code now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">found</span> <span class="o">=</span> <span class="bp">False</span> <span class="c">#new code</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">limit</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Please enter the speed limit: "</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">details</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+    <span class="n">speed</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">if</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="n">limit</span><span class="p">:</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="bp">True</span> <span class="c">#new code</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span> <span class="c">#new code</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"There are no speeding cars"</span><span class="p">)</span> <span class="c">#new code</span>
+</code></pre>
+</div>
+
+<p><strong>NOTE:</strong> You must use a variable to do this rather than adding an <code class="highlighter-rouge">else</code> to the <code class="highlighter-rouge">if</code> as otherwise it could display the message multiple times, for example:</p>
+
+<p><img src="images/reading7.png" alt="Reading7" /></p>
+
+<h2 id="example-program-1---timetable-program">Example Program 1 - Timetable Program</h2>
+<p>This program asks the user to enter the day you want to view the timetable for. It will then look in the file and find the lessons for that day or say that it cannot be found.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="images/reading8.png" alt="Reading8" /></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"timetable.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span> <span class="c">#opens the file</span>
+<span class="n">day</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the day you want to view your timetable for: "</span><span class="p">)</span> <span class="c">#gets the input from the user</span>
+<span class="n">found</span><span class="o">=</span><span class="bp">False</span> <span class="c">#stores whether the day is found in the file, set to False at the beginning</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span> <span class="c">#reads each line in the file</span>
+    <span class="n">timetable</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span> <span class="c">#splits the line into the timetable list</span>
+    <span class="k">if</span> <span class="n">day</span> <span class="o">==</span> <span class="n">timetable</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span> <span class="c">#checks if the day entered is in element 0 of the list</span>
+	<span class="c">#if it is it prints the timetable referring to the different elements of the list</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"On "</span> <span class="o">+</span> <span class="n">timetable</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" your lessons are: </span><span class="se">\n</span><span class="s">"</span><span class="o">+</span>
+              <span class="s">"Period 1 - "</span> <span class="o">+</span> <span class="n">timetable</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s"> Period 2 - "</span> <span class="o">+</span>
+              <span class="n">timetable</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s"> Period 3 - "</span> <span class="o">+</span> <span class="n">timetable</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span>
+              <span class="s">"</span><span class="se">\n</span><span class="s"> Period 4 - "</span> <span class="o">+</span> <span class="n">timetable</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s"> Period 5 - "</span> <span class="o">+</span> <span class="n">timetable</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span>
+	<span class="c">#sets found to True as a match is found</span>
+        <span class="n">found</span><span class="o">=</span><span class="bp">True</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span> <span class="c">#after the loops checks if found if still False</span>
+    <span class="c">#displays a message if it is</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Please enter a day between Monday and Friday"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/reading9.png" alt="Reading9" /></p>
+
+<h2 id="example-program-2---stock-checker">Example Program 2 - Stock Checker</h2>
+<p>This program asks the user to enter the games console they are looking for. It will then look through the file and calculate the total value of each game in stock (the number there are multiplied by the price). If there are no games for that console it will say <code class="highlighter-rouge">Console not found</code>.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="images/reading10.png" alt="Reading10" /></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">console</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a console (Xbox1, Xbox, PS3, PS4): "</span><span class="p">)</span> <span class="c">#gets the input from the user</span>
+<span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"games.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span> <span class="c">#opens the file</span>
+<span class="n">found</span> <span class="o">=</span> <span class="bp">False</span> <span class="c">#stores whether the console is found in the file, set to False at the beginning</span>
+<span class="n">gamevalue</span><span class="o">=</span><span class="mi">0</span> <span class="c">#stores the total value of a game</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span> <span class="c">#reads each line in the file</span>
+    <span class="n">details</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span> <span class="c">#splits the line into the details list</span>
+    <span class="k">if</span> <span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">console</span><span class="p">:</span> <span class="c">#checks if the console entered is in element 0 of the list</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="bp">True</span> <span class="c">#sets found to True as a match is found</span>
+	<span class="c">#variables that store different pieces of information from the list to make them easier to reference</span>
+        <span class="n">game</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="n">rating</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+        <span class="n">noinstock</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+        <span class="n">gamevalue</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">noinstock</span> <span class="c">#calculates the total stock value of a game</span>
+	<span class="c">#prints the game information to screen</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">game</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">rating</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">noinstock</span><span class="p">)</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">gamevalue</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span> <span class="c">#after the loops checks if found if still False</span>
+    <span class="c">#displays a message if it is</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Console not found"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/reading11.png" alt="Reading11" /></p>
+
+<h2 id="reading-through-a-file-multiple-times">Reading through a file multiple times</h2>
+<p>Sometimes you may need to read through a file to find something and if it doesn’t find what you are looking for then try to find something else. To do this you would need to create a loop to repeat the process.</p>
+
+<p>Using the example of the Stock Checker if you enter the console PS4 it will say <code class="highlighter-rouge">Console not found</code> and then the program stops (see below). If you wanted to then try a different console you would have to run the program again.</p>
+
+<p><img src="images/reading12.png" alt="Reading12" /></p>
+
+<p>If you inserted a loop into the program, it could ask you if you wanted to check another console and then repeat the process, like shown below:</p>
+
+<p><img src="images/reading13.png" alt="Reading13" /></p>
+
+<p>This is how the code would change from the example above:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">checkanother</span><span class="o">=</span><span class="s">"Y"</span> <span class="c">#new line 1</span>
+<span class="k">while</span> <span class="n">checkanother</span> <span class="o">==</span><span class="s">"Y"</span><span class="p">:</span> <span class="c">#new line 2</span>
+    <span class="n">console</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Please enter a console (Xbox1, Xbox, PS3, PS4): "</span><span class="p">)</span>
+    <span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"games.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+    <span class="n">found</span> <span class="o">=</span> <span class="bp">False</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+        <span class="n">details</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">console</span><span class="p">:</span>
+            <span class="n">game</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+            <span class="n">rating</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+            <span class="n">noinstock</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+            <span class="n">gamevalue</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">noinstock</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">game</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">price</span><span class="p">),</span><span class="n">rating</span><span class="p">,</span><span class="nb">str</span><span class="p">(</span><span class="n">noinstock</span><span class="p">),</span><span class="nb">str</span><span class="p">(</span><span class="n">gamevalue</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Console not found"</span><span class="p">)</span>
+    <span class="n">checkanother</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Check another console: Y/N "</span><span class="p">)</span> <span class="c">#new line 3</span>
+</code></pre>
+</div>
+
+<p><strong>How it Works</strong></p>
+<ul>
+  <li><strong>New Line 1</strong> - this is a variable that keeps track of whether they want to check another console. This is set to <code class="highlighter-rouge">Y</code> at the start as when the program is ran for the first time they will want to check a console.</li>
+  <li><strong>New Line 2</strong> - this is a <code class="highlighter-rouge">while</code> loop that will repeat while the <code class="highlighter-rouge">checkanother</code> variable is equal to <code class="highlighter-rouge">Y</code>. All of the previous code is then put inside this loop.</li>
+  <li><strong>New Line 3</strong> - after the file has been checked once, the program asks whether the user wants to check another product, it will then go back to the start of the loop. If they have entered <code class="highlighter-rouge">Y</code> it will go around the loop again, if they have typed anything else it will not loop again and stop.</li>
+</ul>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/reading13.png" alt="Reading13" /></p>
+
+<h1 id="file-writing">File Writing</h1>
+
+<p>Sometimes you will need to write data to a file.</p>
+
+<p>The process of writing to a file is always the same. The only thing that changes is what file you are writing to and what you write to the file.</p>
+
+<p>Below are the key steps to the process:</p>
+<ul>
+  <li>Open a connection to a file in append mode.</li>
+  <li>Write the information you want to a file</li>
+  <li>Close the connection to the file</li>
+</ul>
+
+<h2 id="write-modes">Write modes</h2>
+<p>When you read from a file you would use the cost <code class="highlighter-rouge">file = open("filename.csv","r")</code>. The <code class="highlighter-rouge">r</code> stands for read. It would make sense that when you write to a file you use <code class="highlighter-rouge">w</code> instead, but you don’t. <code class="highlighter-rouge">w</code> does stand for write mode, but it means <strong>overwrite</strong>. Therefore each time you write to the file it will overwrite what is in there already.</p>
+
+<p>Therefore when you want to open a connection to a file to write to, you use <code class="highlighter-rouge">append</code> or <code class="highlighter-rouge">a</code> mode. Append means add. It will add to the file rather than overwrite what is already there.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"filename.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>NOTE:</strong> you can call the variable writefile whatever you want.</p>
+
+<h2 id="worked-example---file-writing---christmas-list">Worked example - File Writing - Christmas List</h2>
+<p>Imagine a program that when run asks the user to enter a gift they want for Christmas, how much it costs and the priority of how much they want it.</p>
+
+<p><strong>Step 1 - Getting the information to write to the file</strong></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">gift</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the gift you would like: "</span><span class="p">)</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the cost of the gift: "</span><span class="p">)</span>
+<span class="n">priority</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the priority of the gift (1=low, 5=high): "</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>Before you can write to the file you need to get the information from the user that you want to add to the file.</p>
+
+<p><strong>Step 2 - Creating a Connection to the file</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"filename.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>This code will create a connection to the file <code class="highlighter-rouge">filename.csv</code> in <code class="highlighter-rouge">a</code> mode which stands for append. It can then be referred to as the variable name which is <code class="highlighter-rouge">writefile</code></p>
+
+<p><strong>Step 3 - Write the Information to the File</strong>
+As you are writing to a <code class="highlighter-rouge">csv</code> file you need to separate each piece of data that you want to add with a comma.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">gift</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">cost</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">priority</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>NOTE:</strong> the <code class="highlighter-rouge">\n</code> at the end means new line, this means next time you write to the file it will add the new set of information on a new line.</p>
+
+<p><strong>Step 4 - Closing the Connection</strong>
+Once you have written to the file you need to close the connection to the file. This means it can be used by other parts of the program if needed.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre>
+</div>
+
+<p>The final code looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">gift</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the gift you would like: "</span><span class="p">)</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the cost of the gift: "</span><span class="p">)</span>
+<span class="n">priority</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the priority of the gift (1=low, 5=high): "</span><span class="p">)</span>
+<span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"christmaslist.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+<span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">gift</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">cost</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">priority</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+<span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Gift added to the file"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>The finished program looks like this when run:</p>
+
+<p><img src="images/writing1.png" alt="Writing1" /></p>
+
+<p>The file created looks like this:</p>
+
+<p><img src="images/writing2.png" alt="Writing2" /></p>
+
+<h2 id="example-program-1---deciding-whether-to-write-to-a-file">Example Program 1 - Deciding whether to write to a file</h2>
+<p>Sometimes before you add information to a file, you might need to check if it meets certain requirements. This will require building selection (IF) into your code.</p>
+
+<p>At the moment the program above will always write the information entered to a file. Consider this new requirement:</p>
+
+<p><code class="highlighter-rouge">Santa is running out of money, it should only write to the file gifts that cost less than £150, otherwise say they cost too much</code></p>
+
+<p><strong>How to do this</strong></p>
+<ol>
+  <li>After the information has been entered create an <code class="highlighter-rouge">if</code> that checks if the <code class="highlighter-rouge">cost</code> is less than 150.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">gift</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the gift you would like: "</span><span class="p">)</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the cost of the gift: "</span><span class="p">)</span>
+<span class="n">priority</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the priority of the gift (1=low, 5=high): "</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">150</span><span class="p">:</span>
+</code></pre>
+</div>
+
+<ol>
+  <li><code class="highlighter-rouge">if</code> the cost is less than £150, then the lines of code that write to a file should be run.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">150</span><span class="p">:</span>
+    <span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"christmaslist.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">gift</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">cost</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">priority</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Gift added to the file"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<ol>
+  <li><code class="highlighter-rouge">if</code> the cost is not less than £150, add an <code class="highlighter-rouge">else</code> and add code to say that the gift is too expensive.</li>
+</ol>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That gift is too expensive, Santa doesn't have enough money"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>The final code now looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">gift</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the gift you would like: "</span><span class="p">)</span>
+<span class="n">cost</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the cost of the gift: "</span><span class="p">)</span>
+<span class="n">priority</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the priority of the gift (1=low, 5=high): "</span><span class="p">)</span>
+<span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">150</span><span class="p">:</span> <span class="c">#new code</span>
+    <span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"christmaslist.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">gift</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">cost</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">priority</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Gift added to the file"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> <span class="c">#new code</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That gift is too expensive, Santa doesn't have enough money"</span><span class="p">)</span> <span class="c">#new code</span>
+</code></pre>
+</div>
+
+<h2 id="example-program-2---checking-if-data-exists-in-a-file-before-adding-new-data">Example Program 2 - Checking if data exists in a file before adding new data</h2>
+<p>Sometimes you will need to create a program that reads through a file to see if certain information exists. If it doesn’t then write it to a file.</p>
+
+<p>This program asks the user to enter their names, email address and the number of years they have been teaching. It then looks in the file to see if the email address already exists. If it doesn’t it will write the information entered to a file, if it does it will say that person already exists.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="images/writing3.png" alt="Writing3" /></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#ask the user to enter four pieces of information</span>
+<span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your first name: "</span><span class="p">)</span>
+<span class="n">surname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your surname: "</span><span class="p">)</span>
+<span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your email: "</span><span class="p">)</span>
+<span class="n">yearsteaching</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of years teaching: "</span><span class="p">)</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span> <span class="c">#opens the file in read mode</span>
+<span class="n">found</span><span class="o">=</span><span class="bp">False</span> <span class="c">#sets whether the user is found to False</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span> <span class="c">#reads each line in the file</span>
+    <span class="n">staff</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span> <span class="c">#splits the line into the list called staff</span>
+    <span class="k">if</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">email</span><span class="p">:</span> <span class="c">#checks if the email entered is in the list</span>
+        <span class="n">found</span><span class="o">=</span><span class="bp">True</span> <span class="c">#if it is changes found to True</span>
+<span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#closes the file</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span> <span class="c">#after the loop checks if the user is found</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Staff member already exists in the file"</span><span class="p">)</span> <span class="c">#displays on screen</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c">#if the email was not in the file</span>
+    <span class="n">writefile</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="c">#open the file in append mode</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">firstname</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">surname</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">email</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">yearsteaching</span><span class="p">)</span> <span class="c">#write the new information to the file</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#close the file</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Staff member added to file"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/writing4.png" alt="Writing4" /></th>
+      <th><img src="images/writing3.png" alt="Writing3" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Member of staff exists</td>
+      <td>File after program has run</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/writing5.png" alt="Writing5" /></th>
+      <th><img src="images/writing6.png" alt="Writing6" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Member of staff doesn’t exist</td>
+      <td>File after program has run</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-program-3---reading-data-from-one-file-and-writing-to-a-separate-file">Example Program 3 - Reading Data from one file and writing to a separate file</h2>
+<p>This program looks through a file that contains a list of students and the scores that they have got in four tests. When run it should calculate the average score for each student. If it is over 50 it should write their name and their average score to a new file, if not it should do nothing. The program should also count how many people have averaged above 50.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="images/writing7.png" alt="Writing7" /></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">total</span> <span class="o">=</span><span class="mi">0</span>
+<span class="n">average</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">studentsover50</span> <span class="o">=</span> <span class="mi">0</span> <span class="c">#variable to store how many students have averaged over 50</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Students who have averaged over 50"</span><span class="p">)</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"testscores.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span> <span class="c">#opens the file in read mode</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span> <span class="c">#reads each line in the file</span>
+    <span class="n">scores</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span> <span class="c">#splits the line into the list called scores</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="mi">6</span><span class="p">])</span> <span class="c">#adds up the four test scores</span>
+    <span class="n">average</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="mi">4</span> <span class="c">#calculates the average of the four test scores</span>
+    <span class="k">if</span> <span class="n">average</span><span class="o">&gt;</span><span class="mi">50</span><span class="p">:</span> <span class="c">#checks if the average is more than 50</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">+</span> <span class="n">scores</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">+</span> <span class="n">scores</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\t</span><span class="s">"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">average</span><span class="p">))</span> <span class="c">#prints the name, class and average score</span>
+        <span class="n">studentsover50</span> <span class="o">=</span> <span class="n">studentsover50</span> <span class="o">+</span> <span class="mi">1</span> <span class="c">#adds 1 to the number of students averaging over 50</span>
+        <span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"averageover50.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="c">#opens the file averageover50.csv in append mode</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">scores</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">scores</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">average</span><span class="p">)</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span> <span class="c">#writes the same information that has been printed to screen to file</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#closes the file</span>
+<span class="k">if</span> <span class="n">studentsover50</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c">#after the loop checks if the studentsover50 variable is 0</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"There were no students that averaged over 50"</span><span class="p">)</span> <span class="c">#if it is then say no students averaged over 50</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"The number of students averaging over 50 was "</span> <span class="o">+</span> <span class="n">studentsover50</span><span class="p">)</span> <span class="c">#if not says how many averaged over 50.</span>
+</code></pre>
+</div>
+
+<p>The program when run:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="images/writing8.png" alt="Writing8" /></th>
+      <th style="text-align: center"><img src="images/writing9.png" alt="Writing9" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">IDLE</td>
+      <td style="text-align: center">averageover50.csv file</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="file-updating">File Updating</h1>
+
+<p>Unfortunately, when you want to update information in a file when programming you
+cannot simply find the information and say what you want to change, you have to recreate the whole file changing the single piece of information you want to update, these are the steps you must go through:</p>
+
+<ol>
+  <li>Read through each line of the <strong>original file</strong> that contains the information you want to update.</li>
+  <li>If the line of the file has the information you want to update, then you can change the information, you then write this information to an <strong>updated file</strong></li>
+  <li>If the line of the file doesn’t have the information you want to update, then you write this information (unchanged) to the <strong>updated file</strong></li>
+  <li>Once the entire <strong>original file</strong> has been checked, the <strong>updated file</strong> should have the same number of lines in, but with the updated information. Then you must delete the <strong>original file</strong> and rename the <strong>updated file</strong> to the name of the <strong>original file</strong>.</li>
+</ol>
+
+<p><strong>NOTE:</strong> There are no new programming skills here, however you will need to combine the skills for reading and writing to a file together and program it in a logical order.</p>
+
+<h2 id="worked-example---file-updating---staff-details">Worked example - File Updating - Staff Details</h2>
+<p>Imagine a program that has a file that contains information of staff working in a school. The program when run should ask the user to enter an email address to find the staff details. When it finds a match it should ask for the new information and then update the file. If it doesn’t find a match it should say that the email address is not in the file.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="images/updating1.png" alt="Updating1" /></p>
+
+<p><strong>Program Summary</strong>
+A summary of how the program should work:</p>
+<ul>
+  <li>Read a line from the file and compare the email address</li>
+  <li>If it <strong>is a match</strong> ask the user to enter the <strong>new information</strong> and then write the new information to the <strong>update file</strong>.</li>
+  <li>If it <strong>isn’t a match</strong> write the information that has been read into the list to the <strong>update file unchanged</strong>.</li>
+  <li>After every line in the whole file has been checked, <strong>delete the original file</strong>, <strong>rename</strong> the <strong>updated file</strong> to the name of the <strong>original file</strong>.</li>
+</ul>
+
+<p>Consider this code:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the email address you are looking for:"</span><span class="p">)</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">found</span><span class="o">=</span><span class="bp">False</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">staff</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">email</span><span class="p">:</span>
+        <span class="n">found</span><span class="o">=</span><span class="bp">True</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Enter the new information for this member of staff"</span><span class="p">)</span>
+        <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter their first name: "</span><span class="p">)</span>
+        <span class="n">surname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter their surname: "</span><span class="p">)</span>
+        <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter their email address: "</span><span class="p">)</span>
+        <span class="n">yearsteaching</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter their number of years teaching: "</span> <span class="p">)</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Details updated"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That staff member's email cannot be found in the file, no changes made"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>So far this program will ask the user to enter an email address. It will then open the staff file and check each line in the file for that email address. If it finds it then it will ask the user to enter the new information, but not do anything with it.</p>
+
+<p>After the loop has finished it will check to see if the <code class="highlighter-rouge">found</code> variable is <code class="highlighter-rouge">True</code> and if it is say details updated and if not say the staff member cannot be found.</p>
+
+<p><strong>NOTE:</strong> it doesn’t actually update the details at the moment.</p>
+
+<p>The code once it updates the file:</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span> <span class="c">#new line 1</span>
+<span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the email address you are looking for:"</span><span class="p">)</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">found</span><span class="o">=</span><span class="bp">False</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">staff</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+    <span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"staffupdated.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="c">#new line 2</span>
+    <span class="k">if</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">email</span><span class="p">:</span>
+        <span class="n">found</span><span class="o">=</span><span class="bp">True</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Enter the new information for this member of staff"</span><span class="p">)</span>
+        <span class="n">firstname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter their first name: "</span><span class="p">)</span>
+        <span class="n">surname</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter their surname: "</span><span class="p">)</span>
+        <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter their email address: "</span><span class="p">)</span>
+        <span class="n">yearsteaching</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter their number of years teaching: "</span> <span class="p">)</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">firstname</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">surname</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">email</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">yearsteaching</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span> <span class="c">#new line 3</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c">#new line 4</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">staff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="c">#new line 5</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#new line 6</span>
+<span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#new line 7</span>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">)</span> <span class="c">#new line 8</span>
+<span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">"staffupdated.csv"</span><span class="p">,</span><span class="s">"staff.csv"</span><span class="p">)</span> <span class="c">#new line 9</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Details updated"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That staff member's email cannot be found in the file, no changes made"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>What the new code does</strong></p>
+<ul>
+  <li><strong>New Line 1</strong> - imports a library that is needed so that you can delete and rename files.</li>
+  <li><strong>New Line 2</strong> - opens a connection to a new temporary file called staffupdated.csv in append mode. This will be the new file with the updated information in.</li>
+  <li><strong>New Line 3</strong> - if the email address is found and the user has entered all the new information, it will write to the file all the new updated information.</li>
+  <li><strong>New Line 4</strong> - an <code class="highlighter-rouge">else</code> is added so that if a line of the file has been read and it isn’t a match it must write the information unchanged to the temporary file.</li>
+  <li><strong>New Line 5</strong> - it will write the information that has been read into the list to the temporary file unchanged.</li>
+  <li><strong>New Line 6</strong> - closes the connection to the file you are writing to. This should be done after the <code class="highlighter-rouge">if</code> but inside the <code class="highlighter-rouge">for</code> loop.</li>
+  <li><strong>New Line 7</strong> - closes the connection to the file you are reading from. This should be done after the <code class="highlighter-rouge">for</code> loop.</li>
+  <li><strong>New Line 8</strong> - this will remove the original file, in this case <code class="highlighter-rouge">staff.csv</code></li>
+  <li><strong>New Line 9</strong> - this will rename the temporary file <code class="highlighter-rouge">staffupdated.csv</code> to <code class="highlighter-rouge">staff.csv</code> which will mean the updated information now appears in the original file.</li>
+</ul>
+
+<p>When the program is run in IDLE and the staff member exists in the file:</p>
+
+<p><img src="images/updating2.png" alt="Updating2" /></p>
+
+<p>How the CSV file changes:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/updating3.png" alt="Updating3" /></th>
+      <th>Before the update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/updating4.png" alt="Updating4" /></td>
+      <td>After the update</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When the program is run in IDLE and the staff member doesn’t exist in the file:</p>
+
+<p><img src="images/updating5.png" alt="Updating5" /></p>
+
+<h2 id="example-program-1---updating-a-file---zoo-animals">Example Program 1 - Updating a File - Zoo Animals</h2>
+<p>This program looks through a file that contains a list of animals and how many of them there are in the zoo. When run it should ask the user the animal that they are looking for and if it finds it then ask for the new number of that animals at the zoo and update the file.</p>
+
+<p>The CSV file looks like this:</p>
+
+<p><img src="images/updating6.png" alt="Updating6" /></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span> <span class="c">#imports the os library</span>
+<span class="n">animal</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the animal you are looking for:"</span><span class="p">)</span> <span class="c">#asks the user to enter the animal they are looking for</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"zooanimals.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span> <span class="c">#opens the file in read mode</span>
+<span class="n">found</span><span class="o">=</span><span class="bp">False</span> <span class="c">#sets whether the animal is found to False</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span> <span class="c">#reads each line in the file</span>
+    <span class="n">details</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span> <span class="c">#splits the line into the list called details</span>
+    <span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"zooanimalsupdated.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span> <span class="c">#opens the file zooanimalsupdated.csv in append mode</span>
+    <span class="k">if</span> <span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">animal</span><span class="p">:</span> <span class="c">#checks if the animal is found in the list</span>
+        <span class="n">found</span><span class="o">=</span><span class="bp">True</span> <span class="c">#if it is changes found to True</span>
+        <span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the new number of "</span> <span class="o">+</span> <span class="n">animal</span> <span class="o">+</span> <span class="s">" at the Zoo:"</span><span class="p">)</span> <span class="c">#asks the user to enter the number of that animal at the zoo</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">number</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span> <span class="c">#writes the animal and the new number to the temp file</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">details</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c">#if that line doesn't contain the animal write the details from the list to the temp file unchanged.</span>
+    <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#closes the file that is being written to</span>
+<span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c">#closes the file that is being read</span>
+<span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">"zooanimals.csv"</span><span class="p">)</span> <span class="c">#deletes the original file</span>
+<span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">"zooanimalsupdated.csv"</span><span class="p">,</span><span class="s">"zooanimals.csv"</span><span class="p">)</span> <span class="c">#renames the temporary file to the original file name</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span> <span class="c">#after the loop checks if the animal is found</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Details updated"</span><span class="p">)</span> <span class="c">#if the animal was found say details updated</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That animal cannot be found in the file, no changes made"</span><span class="p">)</span> <span class="c">#if the animal wasn't found say it cannot be found</span>
+</code></pre>
+</div>
+
+<p>The program when run in IDLE with an animal in the file:</p>
+
+<p><img src="images/updating7.png" alt="Updating7" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="images/updating8.png" alt="Updating8" /></th>
+      <th style="text-align: center"><img src="images/updating9.png" alt="Updating9" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Before Update</td>
+      <td style="text-align: center">After Update</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The program when run in IDLE with an animal not in the file:</p>
+
+<p><img src="images/updating10.png" alt="Updating10" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="images/updating8.png" alt="Updating8" /></th>
+      <th style="text-align: center"><img src="images/updating8.png" alt="Updating8" /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Before Update</td>
+      <td style="text-align: center">After Update</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="arrayslists">Arrays/Lists</h1>
+
+<h2 id="what-is-a-listarray">What is a list/array?</h2>
+<p>A list or array is a variable that can store multiple pieces of data under a single name. You can reference parts of the lists to view/change information in them using an index.</p>
+
+<p>A list in Python is created in the following way:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">sentence</span> <span class="o">=</span> <span class="p">[</span><span class="s">"The"</span><span class="p">,</span><span class="s">"quick"</span><span class="p">,</span><span class="s">"grey"</span><span class="p">,</span><span class="s">"fox"</span><span class="p">,</span><span class="s">"jumps"</span><span class="p">]</span>
+</code></pre>
+</div>
+<p>This example creates a list called sentence that has 5 elements to it.</p>
+
+<p>If you wanted to display the word <code class="highlighter-rouge">grey</code> on screen you would type:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+</code></pre>
+</div>
+<p><strong>NOTE:</strong> although <code class="highlighter-rouge">grey</code> is the third element in the list it is retrieved by saying <code class="highlighter-rouge">sentence[2]</code>, this is because the elements start at 0.</p>
+
+<p>If you wanted to output the entire contents of the list you could do this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">sentence</span> <span class="o">=</span> <span class="p">[</span><span class="s">"The"</span><span class="p">,</span><span class="s">"quick"</span><span class="p">,</span><span class="s">"grey"</span><span class="p">,</span><span class="s">"fox"</span><span class="p">,</span><span class="s">"jumps"</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+</code></pre>
+</div>
+<p>You could also use a loop to do the same thing:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">sentence</span> <span class="o">=</span> <span class="p">[</span><span class="s">"The"</span><span class="p">,</span><span class="s">"quick"</span><span class="p">,</span><span class="s">"grey"</span><span class="p">,</span><span class="s">"fox"</span><span class="p">,</span><span class="s">"jumps"</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">sentence</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<h2 id="example-program-1---finding-products-from-a-list">Example program 1 - Finding Products from a List</h2>
+<p>The code for the program below asks the user to enter a product code. It will then look for it in the list. If it finds it it will display the name and price of the product. If it isn’t found it will say <code class="highlighter-rouge">Product not found</code>.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#this is a list that contains product informaton</span>
+<span class="n">product</span> <span class="o">=</span> <span class="p">[</span><span class="s">"1262"</span><span class="p">,</span> <span class="s">"Cornflakes"</span><span class="p">,</span> <span class="s">"£1.40"</span><span class="p">,</span> <span class="s">"8743"</span><span class="p">,</span> <span class="s">"Weetabix"</span><span class="p">,</span> <span class="s">"£1.20"</span><span class="p">,</span> <span class="s">"9512"</span><span class="p">,</span> <span class="s">"Rice Krispies"</span><span class="p">,</span> <span class="s">"£1.32"</span><span class="p">]</span>
+<span class="c">#stores whether the product has been found</span>
+<span class="n">found</span><span class="o">=</span> <span class="bp">False</span>
+<span class="c">#asks the user to enter a product code</span>
+<span class="n">product_code</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the product to find: "</span><span class="p">)</span>
+<span class="c">#a loop that will repeat for the length of the list</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">product</span><span class="p">)):</span>
+    <span class="c">#checks if the product code entered matches the current element of the list being checked</span>
+    <span class="k">if</span> <span class="n">product</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">==</span> <span class="n">product_code</span><span class="p">:</span>
+	<span class="c">#if it is it prints the name and cost</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="n">x</span> <span class="o">+</span> <span class="mi">2</span><span class="p">])</span>
+	<span class="c">#sets found to true as the product is found</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="bp">True</span>    
+<span class="c">#after the loop checks if the product was not found</span>
+<span class="k">if</span> <span class="n">found</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+    <span class="c">#if it wasn't found it says product not found</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Product not found"</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>When run in IDLE:</p>
+
+<p><img src="images/arrays1.png" alt="Arrays1" /></p>
+
+<h2 id="example-program-2---addingremove-from-a-list">Example program 2 - Adding/Remove from a list</h2>
+<p>This program asks the user if they want to add or remove items from a list. It will show you what the list contains at the start. When the user has entered their option it will either add or remove the item entered and then output the updated list.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#Create a new list</span>
+<span class="n">inventory</span> <span class="o">=</span> <span class="p">[</span><span class="s">"torch"</span><span class="p">,</span><span class="s">"gold coin"</span><span class="p">,</span><span class="s">"key"</span><span class="p">]</span>
+<span class="c"># for loop that outputs the current list</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Current Inventory"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inventory</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">inventory</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+<span class="c">#menu that gives the options of what can be done</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"What would you like to do? "</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"1. Add an item to the inventory"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"2. Remove an item from the inventory"</span><span class="p">)</span>
+<span class="c">#gets the user to enter their menu choice</span>
+<span class="n">option</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt; "</span><span class="p">)</span>
+<span class="c">#if the first option is selected</span>
+<span class="k">if</span> <span class="n">option</span> <span class="o">==</span> <span class="s">"1"</span><span class="p">:</span>
+    <span class="c">#ask the user to input the item to add</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the name of the item you want to add to the inventory: "</span><span class="p">)</span>
+    <span class="c">#use append to add it to the list</span>
+    <span class="n">inventory</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="c">#if the second option is selected</span>
+<span class="k">elif</span> <span class="n">option</span> <span class="o">==</span> <span class="s">"2"</span><span class="p">:</span>
+    <span class="c">#ask the user to input the item to remove</span>
+    <span class="n">item</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the name of the item you want to remove from the inventory: "</span><span class="p">)</span>
+    <span class="c">#use remove to delete the item from the list</span>
+    <span class="n">inventory</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="c">#for loop that will output the updated list</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Updated inventory list"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">inventory</span><span class="p">)):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">inventory</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="images/arrays2.png" alt="Arrays2" /></th>
+      <th style="text-align: center"><strong>Adding</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="images/arrays3.png" alt="Arrays3" /></td>
+      <td style="text-align: center"><strong>Removing</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="functions">Functions</h1>
+
+<h2 id="what-are-procedures--functions">What are Procedures / Functions?</h2>
+<ul>
+  <li>When producing large programs you can end up with a lot of code. Procedures and functions allow for programs to be broken up into smaller pieces.</li>
+  <li>This makes them easier to read and easier to follow. It also means that if you work in a team, people can create different procedures/functions and combine them together.</li>
+  <li>Procedures/Functions can take values from the main program and do something with them e.g. add numbers together etc.</li>
+</ul>
+
+<h2 id="what-does-a-function-look-like">What does a function look like?</h2>
+
+<p>A function is either being defined or called. You define the function and what you want it to do first. Then in the main program you call the function that you have created.</p>
+
+<p><strong>Defining</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">functionname</span><span class="p">(</span><span class="n">parameters</span><span class="p">):</span>
+	<span class="n">CODE</span> <span class="n">INSIDE</span> <span class="n">THE</span> <span class="n">FUNCTION</span>
+</code></pre>
+</div>
+
+<p><strong>Calling</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">functionname</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<h2 id="worked-example---vat-calculator">Worked example - VAT Calculator</h2>
+<p>This program will ask the user to enter a price and then calculate the VAT by calling a function.</p>
+
+<p><strong>Step 1 - Create the function</strong>
+The first thing you should do is create the function that calculates the VAT (VAT is 20% of the price)</p>
+
+<p>To define a function you need to do the following:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+</code></pre>
+</div>
+<p><strong>What this does:</strong></p>
+<ul>
+  <li><strong>def</strong> - this lets python know you are defining a function</li>
+  <li><strong>calculate</strong> - this is the name of the function</li>
+  <li><strong>(price)</strong> - this is a parameter. This is what is passed from the main program into the function. You refer to the value passed into the function by price.</li>
+</ul>
+
+<p>Once the function is defined you can write whatever code you want to execute inside of it. In this case we need to work out the VAT, this is 20% of the price.</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+	<span class="n">vat</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="mf">0.2</span>
+</code></pre>
+</div>
+
+<p>The final step is to return the VAT value back to the main program, therefore you need to add the code:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">return</span> <span class="n">vat</span>
+</code></pre>
+</div>
+
+<p><strong>Step 2 - Creating the Main Program</strong>
+Once you have created the necessary functions you can create the main program. In this program the user needs to enter the price, like shown below:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">amount</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a price: "</span><span class="p">))</span>
+</code></pre>
+</div>
+<p><strong>NOTE:</strong> The main program must come after the functions, otherwise it will not find the function you will end up calling. It must also not be indented inside the function.</p>
+
+<p>Now you have the input from the user you need to print the VAT. To do this you will need to
+use the print command like you normally would but inside of it call the function you created
+earlier. Add the following code:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"The VAT is £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">calculate</span><span class="p">(</span><span class="n">amount</span><span class="p">)))</span>
+</code></pre>
+</div>
+<p>The first part of the print command works like it always would, but then it called the function <strong>calculate</strong> and passes the <strong>amount</strong> that was entered into the function. Once the amount is in the function it is referred to as <strong>price</strong>. This is known as a local variable that can only be used within that function.</p>
+
+<p>The final code looks like this:</p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">calculate</span><span class="p">(</span><span class="n">price</span><span class="p">):</span>
+	<span class="n">vat</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="mf">0.2</span>
+	<span class="k">return</span> <span class="n">vat</span>
+
+<span class="n">amount</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter a price: "</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The VAT is £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">calculate</span><span class="p">(</span><span class="n">amount</span><span class="p">)))</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/functions1.png" alt="Functions1" /></p>
+
+<h2 id="example-program-1---highest-number">Example Program 1 - Highest Number</h2>
+<p>This program will ask the user to enter two numbers. A function will then be called that checks which number is the highest and then output which one is the largest. If they are the same it will say they are the same.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#function that uses two parameters</span>
+<span class="k">def</span> <span class="nf">max</span><span class="p">(</span><span class="n">first</span><span class="p">,</span><span class="n">second</span><span class="p">):</span>
+    <span class="c">#checks if first is more than second</span>
+    <span class="k">if</span> <span class="n">first</span><span class="o">&gt;</span><span class="n">second</span><span class="p">:</span>
+  	<span class="c">#if it is returns the first number</span>
+        <span class="k">return</span> <span class="n">first</span>
+    <span class="c">#checks if second is more than first</span>
+    <span class="k">elif</span> <span class="n">second</span><span class="o">&gt;</span><span class="n">first</span><span class="p">:</span>
+	<span class="c">#if it is returns the second number</span>
+        <span class="k">return</span> <span class="n">second</span>
+    <span class="k">else</span><span class="p">:</span>
+	<span class="c">#if they are the same returns 0</span>
+        <span class="k">return</span> <span class="mi">0</span>
+<span class="c">#asks the user to enter two numbers</span>
+<span class="n">num1</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the first number: "</span><span class="p">))</span>
+<span class="n">num2</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter the second number: "</span><span class="p">))</span>
+<span class="c">#calls the function and stores the result in highest</span>
+<span class="n">highest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">)</span>
+<span class="c">#if highest is 0 that means they are the same</span>
+<span class="k">if</span> <span class="n">highest</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Both numbers are the same"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c">#if highest is not 0 it prints the largest number</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">highest</span><span class="p">)</span> <span class="o">+</span> <span class="s">" is the largest number"</span><span class="p">)</span>
+
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/functions2.png" alt="Functions2" /></p>
+
+<h2 id="example-program-2---conversion-program">Example Program 2 - Conversion Program</h2>
+<p>This program will ask the user what conversion method they want to use. After the user has chosen an option it will then ask them to enter a value. It will then call the relevant function and convert the number.</p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#function that converts miles to kilometres</span>
+<span class="k">def</span> <span class="nf">mtokm</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">1.6</span>
+    <span class="k">return</span> <span class="n">answer</span>
+<span class="c">#function that converts kilometres to miles</span>
+<span class="k">def</span> <span class="nf">kmtom</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">0.62</span>
+    <span class="k">return</span> <span class="n">answer</span>
+<span class="c">#function that converts cm to inches</span>
+<span class="k">def</span> <span class="nf">cmtoinch</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">0.39</span>
+    <span class="k">return</span> <span class="n">answer</span>
+<span class="c">#function that converts inches to cm</span>
+<span class="k">def</span> <span class="nf">inchtocm</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">value</span> <span class="o">*</span> <span class="mf">2.54</span>
+    <span class="k">return</span> <span class="n">answer</span>
+<span class="c">#function that generates the menu</span>
+<span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"What conversion would you like to do?"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"1. Convert Miles to Kilometers"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"2. Convert Kilometers to Miles"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"3. Convert CM to Inches"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"4. Convert Inches to CM"</span><span class="p">)</span>
+
+<span class="n">menu</span><span class="p">()</span> <span class="c">#calls the menu function</span>
+<span class="c">#gets the option from the user input</span>
+<span class="n">option</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"&gt;&gt;"</span><span class="p">)</span>
+<span class="k">print</span><span class="p">()</span>
+<span class="c">#asks the user to enter the measurement</span>
+<span class="n">number</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter your measurement to convert: "</span><span class="p">))</span>
+<span class="c">#if the option entered is 1</span>
+<span class="k">if</span> <span class="n">option</span><span class="o">==</span><span class="s">"1"</span><span class="p">:</span>
+    <span class="c">#calls the relevant function and then displays the conversion =</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">" miles in KM is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">mtokm</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
+<span class="c">#if the option entered is 2</span>
+<span class="k">elif</span> <span class="n">option</span><span class="o">==</span><span class="s">"2"</span><span class="p">:</span>
+    <span class="c">#calls the relevant function and then displays the conversion =</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">" KM in miles is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">kmtom</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
+<span class="c">#if the option entered is 3</span>
+<span class="k">elif</span> <span class="n">option</span><span class="o">==</span><span class="s">"3"</span><span class="p">:</span>
+    <span class="c">#calls the relevant function and then displays the conversion =</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">" CM in inches is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">cmtoinch</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
+<span class="c">#if any other value is entered</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c">#calls the relevant function and then displays the conversion =</span>
+    <span class="k">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span> <span class="o">+</span> <span class="s">" inches in CM is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">inchtocm</span><span class="p">(</span><span class="n">number</span><span class="p">)))</span>
+</code></pre>
+</div>
+
+<p>When run in IDLE:</p>
+
+<p><img src="images/functions3.png" alt="Functions3" /></p>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017 - v1.1 - Ben Barnes and Tristan Kirkpatrick</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script>
+        trianglify("#67008E", "#5B3293");
+    </script>
+    <script>
+          if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+
+
+
+
+    </body>
+</html>

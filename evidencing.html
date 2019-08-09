@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Evidencing</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/evidencing.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #67008E;
+        background: linear-gradient(135deg, #67008E, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Evidencing</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="evidencing">Evidencing</h1>
+<p>You must produce a document for your controlled assessment to show how you have completed the programming task.</p>
+
+<h2 id="how-it-is-marked">How it is marked</h2>
+<p>The controlled assessment is out of 40 marks and is broken into <strong>five</strong> sections, these are:</p>
+<ul>
+  <li><strong>Programming Techniques (12 marks)</strong> - creating a working solution to the problem</li>
+  <li><strong>Analysis (6 marks)</strong> - breaking down the task down, working out what it needs to do</li>
+  <li><strong>Design (8 marks)</strong> - planning how you are going to solve the problem and test it, this includes algorithms</li>
+  <li><strong>Development (8 marks)</strong> - showing how you solved the problem and how you developed it bit by bit, also showing how you tested it as you made it.</li>
+  <li><strong>Testing, Evaluation &amp; Conclusions (6 marks)</strong> - testing your finished solution thoroughly to show it work, writing a conclusion against the success criteria.</li>
+</ul>
+
+<p>The information below gives you pointers and hints about what to include in your report, use this information carefully to ensure you include everything you need to.</p>
+
+<h2 id="analysis-section">Analysis Section</h2>
+<p>This should include:</p>
+<ul>
+  <li>an explanation of the task that you need to complete, saying what it will need to do</li>
+  <li>a break down of the main task, listing the smaller sub-tasks</li>
+</ul>
+
+<h3 id="process-of-success">Process of Success</h3>
+
+<p><img src="./images/evidencing1.png" alt="Evidencing1" /></p>
+
+<p>Each sub-task identified in the analysis should follow the process of success and be broken down into <strong>three</strong> key sections, these are <strong>design</strong>, <strong>development</strong> and <strong>testing</strong>.</p>
+
+<h2 id="design-section">Design Section</h2>
+<p>This should include:</p>
+<ul>
+  <li>Success Criteria - a list of success criteria for the requirement.</li>
+  <li>Approach to be Used - this should include an explanation of the programming techniques you will use to complete the task.</li>
+  <li>IPOD table - showing the inputs, processes, outputs and decisions that will be needed.</li>
+  <li>Variables to be Used - this should include the data type and what each one will be used for.</li>
+  <li>Validation to be Used - this should explain the different validation that could/will be added to the solution.</li>
+  <li>Pseudocode &amp; Flowchart of the solution to be created.</li>
+  <li>Test plan - this should detail the tests that will be carried out after development.</li>
+</ul>
+
+<h2 id="development-section">Development Section</h2>
+<p>This should include:</p>
+<ul>
+  <li>explanation showing how you developed the code bit by bit to get to your finished solution.</li>
+  <li>screenshots and evidence of problems you had and changes you made to solve them.</li>
+  <li>screenshots and evidence of any tests you carried out as you developed the program to test that sections were working.</li>
+  <li>full annotation of the final code with screenshots of it.</li>
+</ul>
+
+<h2 id="testing-section">Testing Section</h2>
+<ul>
+  <li>Test plan has been fully completed with screenshots showing the tests being carried out.</li>
+  <li>If any tests failed, these should be corrected and re-tested.</li>
+  <li>Evaluation of your solution against the success criteria, explaining how you have met each one.</li>
+</ul>
+
+<h2 id="design-section-support">Design Section Support</h2>
+
+<h3 id="variables-to-be-used">Variables to be Used</h3>
+<p>Create a table that lists all of the variable names, their data types and what they will be used for, an example is shown below:</p>
+
+<p><img src="./images/evidencing2.png" alt="Evidencing2" /></p>
+
+<h3 id="ipod-table">IPOD Table</h3>
+<p>The IPOD table will help break down the task by identifying the <strong>inputs</strong>, <strong>processes</strong>, <strong>outputs</strong> and <strong>decisions</strong>. You could write it as a list or use a table like the example below:</p>
+
+<p><img src="./images/evidencing3.png" alt="Evidencing3" /></p>
+
+<h3 id="validation-to-be-used">Validation to be Used</h3>
+<p>Make a list of the different validation you will try to include in your solution to prevent invalid input. You can either make this as a set of bullet points or use a table like the example below:</p>
+
+<p><img src="./images/evidencing4.png" alt="Evidencing4" /></p>
+
+<h3 id="pseudocode">Pseudocode</h3>
+<p>You need to develop pseudocode to show the design of your algorithm, below is the pseudocode guide supplied by OCR to help you.</p>
+
+<h4 id="variables">Variables</h4>
+<p>Variables are assigned using the <code class="highlighter-rouge">=</code> operator.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>x=3
+name=“Bob”
+</code></pre>
+</div>
+
+<p>A variable is declared the first time a value is assigned. It assumes the data type of the value it is given.</p>
+
+<p>Variables declared inside a function or procedure are local to that subroutine.</p>
+
+<p>Variables in the main program can be made global with the keyword global.
+<code class="highlighter-rouge">global userid = 123</code></p>
+
+<h4 id="casting">Casting</h4>
+<p>Variables can be typecast using the int str and float functions.</p>
+
+<p><code class="highlighter-rouge">str(3)</code> returns “3”</p>
+
+<p><code class="highlighter-rouge">int (“3.14”)</code> returns 3</p>
+
+<p><code class="highlighter-rouge">float (“3.14”)</code> returns 3.14</p>
+
+<h4 id="outputting-to-screen">Outputting to Screen</h4>
+<p><code class="highlighter-rouge">print(string/variable)</code></p>
+
+<p><strong>Example</strong>
+<code class="highlighter-rouge">print("hello")</code></p>
+
+<h4 id="taking-input-from-user">Taking Input from User</h4>
+<p><code class="highlighter-rouge">variable=input(prompt to user)</code></p>
+
+<p><strong>Example</strong>
+<code class="highlighter-rouge">name=input(“Please enter your name”)</code></p>
+
+<h4 id="selection">Selection</h4>
+<p>Selection will be carried out with if/else</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>if entry=="a" then
+	print("You selected A")
+elseif entry=="b" then
+	print("You selected B")
+else
+	print("Unrecognised selection")
+endif
+</code></pre>
+</div>
+
+<p><strong>switch/case</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>switch entry:
+	case “A”:
+		print(“You selected A”)
+	case “B”:
+		print(“You selected B”)
+	default:
+		print(“Unrecognised selection”)
+endswitch
+</code></pre>
+</div>
+
+<h4 id="iteration--count-controlled">Iteration – Count Controlled</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>for i=0 to 7
+	print("Hello")
+next i
+</code></pre>
+</div>
+<p>Will print hello 8 times (0-7 inclusive).</p>
+
+<h4 id="iteration--condition-controlled">Iteration – Condition Controlled</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>while answer!="computer"
+	answer=input("What is the password?")
+endwhile
+</code></pre>
+</div>
+<div class="highlighter-rouge"><pre class="highlight"><code>do
+	answer=input("What is the password?")
+until answer=="computer"
+</code></pre>
+</div>
+
+<h4 id="string-handling">String Handling</h4>
+<p>To get the length of a string:
+<code class="highlighter-rouge">stringname.length</code></p>
+
+<p>To get a substring:
+<code class="highlighter-rouge">stringname.subString(startingPosition, numberOfCharacters)</code></p>
+
+<p><strong>NB</strong> The string will start with the 0th character.</p>
+
+<p><strong>Example</strong></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>someText=”Computer Science”
+print(someText.length)
+print(someText.substring(3,3))
+</code></pre>
+</div>
+
+<p>Will display
+16</p>
+
+<p>put</p>
+
+<h4 id="arrays">Arrays</h4>
+<p>Arrays will be 0 based and declared with the keyword array.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>array names[5]
+names[0]=”Ahmad”
+names[1]=”Ben”
+names[2]=”Catherine”
+names[3]=”Dana”
+names[4]=”Elijah”
+print(names[3])
+</code></pre>
+</div>
+<p>Example of 2D array:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Array board[8,8]
+board[0,0]=”rook”
+</code></pre>
+</div>
+
+<h4 id="reading-to-and-writing-from-files">Reading to and Writing from Files</h4>
+<p>To open a file to read from openRead is used and readLine to return a line of text from the file.
+The following program makes x the first line of sample.txt</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>myFile = openRead(“sample.txt”)
+x = myFile.readLine()
+myFile.close()
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">endOfFile()</code> is used to determine the end of the file. The following program will print out the contents of sample.txt</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>myFile = openRead(“sample.txt”)
+while NOT myFile.endOfFile()
+	print(myFile.readLine())
+endwhile
+myFile.close()
+</code></pre>
+</div>
+
+<p>To open a file to write to openWrite is used and writeLine to add a line of text to the file. In the program below hello world is made the contents of sample.txt (any previous contents are overwritten).</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>myFile = openWrite(“sample.txt”)
+myFile.writeLine(“Hello World”)
+myFile.close()
+</code></pre>
+</div>
+
+<h4 id="subroutines">Subroutines</h4>
+<div class="highlighter-rouge"><pre class="highlight"><code>function triple(number)  
+	return number*3
+endfunction  
+</code></pre>
+</div>
+
+<p>Called from main program</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>y=triple(7)  
+procedure greeting(name)  
+	print(“hello”+name)
+endprocedure
+</code></pre>
+</div>
+
+<p>Called from main program<br />
+<code class="highlighter-rouge">greeting(“Hamish”)</code></p>
+
+<h3 id="flowchart">Flowchart</h3>
+<p>You also need to create a flowchart when designing your program, use the symbols below to do this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Symbol</strong></th>
+      <th style="text-align: center"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><img src="./images/evidencing5.png" alt="Evidencing5" /></td>
+      <td style="text-align: center">This shapes indicates the start or end of a flowchart</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="./images/evidencing6.png" alt="Evidencing6" /></td>
+      <td style="text-align: center">A rectangular box represents a process, this is doing something. E.g. total = num1+num2</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="./images/evidencing7.png" alt="Evidencing7" /></td>
+      <td style="text-align: center">A parallelogram represents input or output. E.g. Input num1 Output total</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="./images/evidencing8.png" alt="Evidencing8" /></td>
+      <td style="text-align: center">A diamond shape represents a decision, YES or NO e.g. is it a weekday?</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><img src="./images/evidencing9.png" alt="Evidencing9" /></td>
+      <td style="text-align: center">This can be used to represent a link to a smaller sub-task from a main flowchart</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="test-plan">Test Plan</h3>
+<p>Use the table layout below when creating your test plan. The test plan should have the <strong>Actual Outcome</strong> and <strong>Pass/Fail</strong> left blank until it is completed in the testing section at the end.</p>
+
+<p><img src="./images/evidencing10.png" alt="Evidencing10" /></p>
+
+<h2 id="development-section-support">Development Section Support</h2>
+
+<h3 id="annotation-of-code">Annotation of Code</h3>
+<p>Below are two examples of code annotation, one is a poor example as it doesn’t explain how the code works, it just identifies what sections do very briefly.</p>
+
+<p><strong>Poor Annotation</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#user inputs</span>
+<span class="n">adults</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of adults: "</span><span class="p">)</span>
+<span class="n">children</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of children: "</span><span class="p">)</span>
+<span class="c">#works out the cost</span>
+<span class="n">adulttotal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">adults</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="n">childtotal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">children</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="n">grandtotal</span> <span class="o">=</span> <span class="n">adulttotal</span> <span class="o">+</span> <span class="n">childtotal</span>
+<span class="c">#displays the cost</span>
+<span class="k">print</span><span class="p">(</span><span class="n">adults</span> <span class="o">+</span> <span class="s">" adults and "</span> <span class="o">+</span> <span class="n">children</span> <span class="o">+</span> <span class="s">" children will cost a total of £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">grandtotal</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p><strong>Good Annotation</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#asks the user to input the number of adults and stores it in the adults variable</span>
+<span class="n">adults</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of adults: "</span><span class="p">)</span>
+<span class="c">#asks the user to input the number of children and stores it in the children variable</span>
+<span class="n">children</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the number of children: "</span><span class="p">)</span>
+<span class="c">#works out the adult cost by multiplying the number of adults by £5 and storing it in adult total</span>
+<span class="n">adulttotal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">adults</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span>
+<span class="c">#works out the child cost by multiplying the number of children by £3 and storing it in child total</span>
+<span class="n">childtotal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">children</span><span class="p">)</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="c">#works out the grand total by adding the adult total to the child total</span>
+<span class="n">grandtotal</span> <span class="o">=</span> <span class="n">adulttotal</span> <span class="o">+</span> <span class="n">childtotal</span>
+<span class="c">#displays the cost for the number of adults and number of children</span>
+<span class="k">print</span><span class="p">(</span><span class="n">adults</span> <span class="o">+</span> <span class="s">" adults and "</span> <span class="o">+</span> <span class="n">children</span> <span class="o">+</span> <span class="s">" children will cost a total of £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">grandtotal</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<h2 id="testing--evaluation-section-support">Testing &amp; Evaluation Section Support</h2>
+
+<h3 id="evaluation">Evaluation</h3>
+<p>You must evaluate your final program against the success criteria you came up with at the start. You can do this as a series of paragraphs or use the structure below:</p>
+
+<p><img src="./images/evidencing11.png" alt="Evidencing11" /></p>
+
+<p><strong>NOTE:</strong> You should try to use keywords in your explanations to get the higher marks</p>
+
+<h2 id="evidence-checklist">Evidence Checklist</h2>
+<p>Use the checklist below to make sure you have included everything in your report:</p>
+
+<p><img src="./images/evidencing12.PNG" alt="Evidencing12" /></p>
+
+<p>You should complete the following for each of the sub-tasks identified in your analysis.</p>
+
+<p><img src="./images/evidencing13.PNG" alt="Evidencing13" /></p>
+
+<p>You should complete the following for each of the sub-tasks identified in your analysis.</p>
+
+<p><img src="./images/evidencing14.PNG" alt="Evidencing14" /></p>
+
+<p>You should complete the following for each of the sub-tasks identified in your analysis.</p>
+
+<p><img src="./images/evidencing15.PNG" alt="Evidencing15" /></p>
+
+<h2 id="final-layout-checks">Final Layout Checks</h2>
+<p>Before your submit your final work make sure you have checked to make sure have done the following:</p>
+
+<p><img src="./images/evidencing16.PNG" alt="Evidencing16" /></p>
+
+<h2 id="exemplar-evidence--marking-criteria">Exemplar Evidence &amp; Marking Criteria</h2>
+<p>Click on the links below to see exemplar evidence for a made up task and the controlled assessment marking criteria.</p>
+
+<p>The exemplar evidence shows all the sections that you would need to include for the real controlled assessment brief to give you an idea of what to include and how to lay it out.</p>
+
+<p>Click <a href="docs/ExemplarEvidenceNEA.pdf">here</a> to view the exemplar NEA evidence.</p>
+
+<p>Click <a href="docs/NEAMarkingCriteria.pdf">here</a> to view the marking criteria for the controlled assessment.</p>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017 - v1.1 - Ben Barnes and Tristan Kirkpatrick</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script>
+        trianglify("#67008E", "#5B3293");
+    </script>
+    <script>
+          if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+
+
+
+
+    </body>
+</html>

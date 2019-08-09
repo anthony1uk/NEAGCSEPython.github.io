@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Debugging</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/debugging.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #67008E;
+        background: linear-gradient(135deg, #67008E, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Debugging</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="debugging">Debugging</h1>
+
+<p>Below are some of the common errors that you will find when using Python with how to overcome them.</p>
+
+<h2 id="eol-while-scanning-string-literal">EOL while scanning string literal</h2>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging1.png" alt="Debugging1" /></p>
+
+<p><strong>Reason:</strong> this has happened as there is a missing speech marks after the string before the close bracket. IDLE will highlight the line that it is on for you.</p>
+
+<p><strong>Solution:</strong> Add the speech marks in the correct place. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging2.png" alt="Debugging2" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging3.png" alt="Debugging3" /></p>
+
+<p><strong>Reason:</strong> this has happened as there is a missing speech marks in the <code class="highlighter-rouge">print</code> message between the string and the variable name.</p>
+
+<p><strong>Solution:</strong> Add the speech marks in the correct place. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging4.png" alt="Debugging4" /></p>
+
+<h2 id="invalid-syntax">Invalid Syntax</h2>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging5.png" alt="Debugging5" /></p>
+
+<p><strong>Reason:</strong> this has happened as there is an incorrect number of close brackets at the end of the line of code. As there is two open brackets (one for the float function and one for the input function) there needs to be two at the end.</p>
+
+<p><strong>Solution:</strong> Add the bracket in the correct place. When IDLE highlights the error, it is normally on the line above where it highlights it. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging6.png" alt="Debugging6" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging7.png" alt="Debugging7" /></p>
+
+<p><strong>Reason:</strong> this has happened as the string in the <code class="highlighter-rouge">print</code> message has not been joined with the <code class="highlighter-rouge">round</code> function, a <code class="highlighter-rouge">+</code> or <code class="highlighter-rouge">,</code> is missing.</p>
+
+<p><strong>Solution:</strong> Add the <code class="highlighter-rouge">+</code> or <code class="highlighter-rouge">,</code> in the correct place. When IDLE highlights the error, the error is normally just before. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging8.png" alt="Debugging8" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging9.png" alt="Debugging9" /></p>
+
+<p><strong>Reason:</strong> this has happened as a bracket has been missed at the end of the <code class="highlighter-rouge">print</code> command.</p>
+
+<p><strong>Solution:</strong> Add the <code class="highlighter-rouge">)</code> in the correct place. When IDLE highlights the error, it is normally on the line above where it highlights it. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging10.png" alt="Debugging10" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging11.png" alt="Debugging11" /></p>
+
+<p><strong>Reason:</strong> this has happened as you should have a double equals sign <code class="highlighter-rouge">==</code>. When comparing two values in Python you must use a double equals.</p>
+
+<p><strong>Solution:</strong> Add another <code class="highlighter-rouge">=</code> in the correct place. When IDLE highlights the error, it is showing the exact location of the problem. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging12.png" alt="Debugging12" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging13.png" alt="Debugging13" /></p>
+
+<p><strong>Reason:</strong> this has happened as after an if statement with the condition check it should have a colon <code class="highlighter-rouge">:</code>.</p>
+
+<p><strong>Solution:</strong> Add a colon <code class="highlighter-rouge">:</code> in the correct place. When IDLE highlights the error, it is directly in front of where the red line ends. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging14.png" alt="Debugging14" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging15.png" alt="Debugging15" /></p>
+
+<p><strong>Reason:</strong> this has happened as a colon <code class="highlighter-rouge">:</code> is needed after the end of a line with <code class="highlighter-rouge">while</code> on it.</p>
+
+<p><strong>Solution:</strong> Add a colon <code class="highlighter-rouge">:</code> in the correct place. When IDLE highlights the error, it is directly infront of where the red line ends. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging16.png" alt="Debugging16" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging21.png" alt="Debuggin21" /></p>
+
+<p><strong>Reason:</strong> this has happened as an <code class="highlighter-rouge">else</code> should have no condition after it. If you want to have a condition it should be an <code class="highlighter-rouge">elif</code>.</p>
+
+<p><strong>Solution:</strong> As it is the last check it should just  be <code class="highlighter-rouge">else:</code>. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging22.png" alt="Debugging22" /></p>
+
+<h2 id="nameerror-name-variable-is-not-defined">NameError: name ‘variable’ is not defined</h2>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging17.png" alt="Debugging17" /></p>
+
+<p><strong>Reason:</strong> this has happened as the variable has been used later in the program but has not been defined at the start and given a starting value.</p>
+
+<p><strong>Solution:</strong> Define the variable at the start of the code and set it to a starting value, e.g. 0. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging18.png" alt="Debugging18" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging19.png" alt="Debugging19" /></p>
+
+<p><strong>Reason:</strong> this has happened as the variable that you have used in line 2 doesn’t exist. IDLE lets you know what line the error is on. The <code class="highlighter-rouge">if</code> refers to mark and the user input is stored as <code class="highlighter-rouge">score</code>.</p>
+
+<p><strong>Solution:</strong> Change the name of the variable to the correct name that you want to refer to, in this case <code class="highlighter-rouge">score</code>. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging20.png" alt="Debugging20" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging23.png" alt="Debugging23" /></p>
+
+<p><strong>Reason:</strong> this has happened as the variable that you have used in line 6 doesn’t exist. IDLE lets you know what line the error is on. The variable defined at the start is <code class="highlighter-rouge">attempts</code> and when it is used in the code is referred to as <code class="highlighter-rouge">attempt</code>.</p>
+
+<p><strong>Solution:</strong> Change the name of the variable in line six to <code class="highlighter-rouge">attempts</code> to match the name of the variable on line 3. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging24.png" alt="Debugging24" /></p>
+
+<h2 id="expected-an-indented-block">expected an indented block</h2>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging25.png" alt="Debugging25" /></p>
+
+<p><strong>Reason:</strong> this has happened as the code that is to be executed inside a loop must be indented.</p>
+
+<p><strong>Solution:</strong> Indent the code that you want to execute inside the loop. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging26.png" alt="Debugging26" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging27.png" alt="Debugging27" /></p>
+
+<p><strong>Reason:</strong> this has happened as the code that is be executed after an <code class="highlighter-rouge">if</code> must be indented.</p>
+
+<p><strong>Solution:</strong> Indent the code that you want to execute if the condition is met under the <code class="highlighter-rouge">if</code>. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging28.png" alt="Debugging28" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging29.png" alt="Debugging29" /></p>
+
+<p><strong>Reason:</strong> this has happened as the code has not been correctly indented. The code for the <code class="highlighter-rouge">while</code> loop is indented correctly, however there needs further indentation for code under the <code class="highlighter-rouge">if</code>.</p>
+
+<p><strong>Solution:</strong> Indent the code that you want to execute if the condition is met under the <code class="highlighter-rouge">if</code>. The change on this example is shown below:</p>
+
+<p><img src="./images/debugging30.png" alt="Debugging30" /></p>
+
+<h2 id="typeerrors">TypeErrors</h2>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging31.png" alt="Debugging31" /></p>
+
+<p><strong>Reason:</strong> this has happened as on line 4 it has tried to use height in a calculation, but height is stored as a string, the data type of <code class="highlighter-rouge">height</code> is a <code class="highlighter-rouge">string</code>.</p>
+
+<p><strong>Solution:</strong> convert the input to a <code class="highlighter-rouge">float</code> or <code class="highlighter-rouge">int</code> so it is considered a number and can be used in calculations.</p>
+
+<p><img src="./images/debugging32.png" alt="Debugging32" /></p>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging33.png" alt="Debugging33" /></p>
+
+<p><strong>Reason:</strong> this has happened as on line 5 as it has tried to use height in a <code class="highlighter-rouge">print</code> command. It is joining a string with a float and therefore it gives an error. All variables in a print command must be converted to a <code class="highlighter-rouge">str()</code> to prevent the error.</p>
+
+<p><strong>Solution:</strong> convert the variable <code class="highlighter-rouge">height</code> to a string <code class="highlighter-rouge">str(height)</code> in the print command.</p>
+
+<p><img src="./images/debugging34.png" alt="Debugging34" /></p>
+
+<h2 id="ioerror">IOError</h2>
+
+<p><strong>Error:</strong></p>
+
+<p><img src="./images/debugging35.png" alt="Debugging35" /></p>
+
+<p><strong>Reason:</strong> this has happened as the file that is trying to be read cannot be found. This means that the .csv file is not in the same folder as the Python program.</p>
+
+<p><strong>Solution:</strong> make sure the <code class="highlighter-rouge">.csv</code> file that you are trying to read is in the same folder as the Python program.</p>
+
+<p><img src="./images/debugging36.png" alt="Debugging36" /></p>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017 - v1.1 - Ben Barnes and Tristan Kirkpatrick</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script>
+        trianglify("#67008E", "#5B3293");
+    </script>
+    <script>
+          if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+
+
+
+
+    </body>
+</html>

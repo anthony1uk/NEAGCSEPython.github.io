@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Testing</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/testing.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #67008E;
+        background: linear-gradient(135deg, #67008E, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/testing.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="./key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./testing.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Testing</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container">
+    <div class="bs-docs-container row">
+        <div class="col-md-12" role="main">
+            <div class="bs-docs-section"><h1 id="testing">Testing</h1>
+
+<p>When you complete the testing section of your project you need to make sure your testing table is specific and attempts to test all possible inputs.</p>
+
+<p>Below are a series of programs and completed testing tables so you can see how you should complete the testing tables.</p>
+
+<h2 id="example-1---email-address-validation">Example 1 - Email Address Validation</h2>
+<p>This program gets the user to enter an email address and it will decide if it is valid or not. The email address must follow the following format:</p>
+<ul>
+  <li>start with a string of alphanumeric characters</li>
+  <li>followed by the @ symbol</li>
+  <li>another string of alphanumeric characters</li>
+  <li>followed by a “.”</li>
+  <li>then a string of alphanumeric characters</li>
+</ul>
+
+<p><strong>Program code:</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter an email address: "</span><span class="p">)</span>
+<span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span>
+    <span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter an email address: "</span><span class="p">)</span>
+<span class="n">pattern</span> <span class="o">=</span> <span class="s">"^[A-Za-z0-9]+</span><span class="err">\</span><span class="s">@[A-Za-z0-9]+</span><span class="err">\</span><span class="s">.[A-Za-z0-9]+$"</span>
+<span class="n">passwordMatch</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">passwordMatch</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"VALID"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"INVALID"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing1.png" alt="Testing1" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing2.png" alt="Testing2" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing3.png" alt="Testing3" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing4.png" alt="Testing4" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing5.png" alt="Testing5" /></td>
+      <td><strong>Test 4</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing6.png" alt="Testing6" /></td>
+      <td><strong>Test 5</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-2---grade-calculator">Example 2 - Grade Calculator</h2>
+<p>This program gets the user to enter a test score between 0 and 100. It will then say the grade and how many marks they are off the next grade. The grade boundaries are:</p>
+<ul>
+  <li>A = 70+</li>
+  <li>B = 60+</li>
+  <li>C = 50+</li>
+  <li>D = 40+</li>
+  <li>U = &lt;40</li>
+</ul>
+
+<p><strong>Program code:</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">valid</span><span class="o">=</span><span class="bp">False</span>
+<span class="k">while</span> <span class="n">valid</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a score between 0 and 100: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">score</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+        <span class="n">valid</span><span class="o">=</span><span class="bp">False</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">valid</span><span class="o">=</span><span class="bp">True</span>
+        <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">&lt;</span><span class="mi">0</span> <span class="ow">or</span> <span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">100</span><span class="p">:</span>
+            <span class="n">valid</span><span class="o">=</span><span class="bp">False</span>
+<span class="n">score</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span><span class="mi">70</span><span class="p">:</span>
+    <span class="n">marksoff</span> <span class="o">=</span> <span class="mi">100</span><span class="o">-</span><span class="n">score</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade A, you were "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">marksoff</span><span class="p">)</span><span class="o">+</span><span class="s">" marks off full marks"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">60</span><span class="p">:</span>
+    <span class="n">marksoff</span> <span class="o">=</span> <span class="mi">70</span><span class="o">-</span><span class="n">score</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade B, you were "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">marksoff</span><span class="p">)</span><span class="o">+</span><span class="s">" marks off an A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">50</span><span class="p">:</span>
+    <span class="n">marksoff</span> <span class="o">=</span> <span class="mi">60</span><span class="o">-</span><span class="n">score</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade C, you were "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">marksoff</span><span class="p">)</span><span class="o">+</span><span class="s">" marks off a B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">score</span><span class="o">&gt;=</span><span class="mi">40</span><span class="p">:</span>
+    <span class="n">marksoff</span> <span class="o">=</span> <span class="mi">50</span><span class="o">-</span><span class="n">score</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade D, you were "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">marksoff</span><span class="p">)</span><span class="o">+</span><span class="s">" marks of a C"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">marksoff</span><span class="o">=</span><span class="mi">40</span><span class="o">-</span><span class="n">score</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"That test score is a grade U, you were "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">marksoff</span><span class="p">)</span><span class="o">+</span><span class="s">" marks off a D"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing7.png" alt="Testing7" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing9.png" alt="Testing9" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing10.png" alt="Testing10" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing11.png" alt="Testing11" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing12.png" alt="Testing12" /></td>
+      <td><strong>Test 4</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing13.png" alt="Testing13" /></td>
+      <td><strong>Test 5</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing8.png" alt="Testing8" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing14.png" alt="Testing14" /></th>
+      <th><strong>Test 6</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing15.png" alt="Testing15" /></td>
+      <td><strong>Test 7</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing16.png" alt="Testing16" /></td>
+      <td><strong>Test 8</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing17.png" alt="Testing17" /></td>
+      <td><strong>Test 9</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing18.png" alt="Testing18" /></td>
+      <td><strong>Test 10</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-3---speeding-cars">Example 3 - Speeding Cars</h2>
+<p>This program reads a file that contains a list of car registration plates and the speed they were captured at going through a speed camera. The user will enter the speed limit and it will display which of the cars in the file were speeding. Part of the file <code class="highlighter-rouge">cars.csv</code> is shown below:</p>
+
+<p><img src="./images/testing19.png" alt="Testing19" /></p>
+
+<p><strong>Program code:</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">speed</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the speed limit (mph) "</span><span class="p">)</span>
+<span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"cars.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="n">speeding</span> <span class="o">=</span> <span class="bp">False</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">cars</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">cars</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">&gt;</span><span class="nb">float</span><span class="p">(</span><span class="n">speed</span><span class="p">):</span>
+        <span class="n">speeding</span> <span class="o">=</span> <span class="bp">True</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">cars</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">cars</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">speeding</span> <span class="o">==</span> <span class="bp">False</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"There were no cars that broke the speed limit of "</span> <span class="o">+</span> <span class="n">speed</span> <span class="o">+</span> <span class="s">"mph"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing20.png" alt="Testing20" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing21.png" alt="Testing21" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing22.png" alt="Testing22" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing23.png" alt="Testing23" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-4---order-program">Example 4 - Order Program</h2>
+<p>This program reads a file that contains a list of products and their prices sold in a shop. The user enters a GTIN code (barcode) and how many the customer wants. It then calculates the total cost of each item and a grand total and creates a receipt.</p>
+
+<p><strong>CSV File</strong></p>
+
+<p><img src="./images/testing29.png" alt="Testing29" /></p>
+
+<p><strong>Program code:</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="n">anotherItem</span><span class="o">=</span><span class="bp">True</span>
+<span class="n">receipt</span><span class="o">=</span><span class="s">""</span>
+<span class="n">totalcost</span><span class="o">=</span><span class="mi">0</span>
+<span class="k">while</span> <span class="n">anotherItem</span> <span class="ow">is</span> <span class="bp">True</span><span class="p">:</span>
+    <span class="n">gtin</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a GTIN8 Number: "</span><span class="p">)</span>
+    <span class="n">quantity</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter a quantity: "</span><span class="p">)</span>
+    <span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"Products1.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+    <span class="n">itemFound</span><span class="o">=</span><span class="bp">False</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+        <span class="n">product</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">product</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="n">gtin</span><span class="p">:</span>
+            <span class="n">price</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+            <span class="n">itemFound</span><span class="o">=</span><span class="bp">True</span>
+            <span class="n">itemTotal</span><span class="o">=</span><span class="nb">round</span><span class="p">(</span><span class="n">price</span><span class="o">*</span><span class="nb">int</span><span class="p">(</span><span class="n">quantity</span><span class="p">),</span><span class="mi">2</span><span class="p">)</span>
+            <span class="n">receipt</span><span class="o">=</span><span class="n">receipt</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="n">product</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">" "</span><span class="o">+</span><span class="n">product</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="s">" "</span><span class="o">+</span><span class="n">quantity</span><span class="o">+</span><span class="s">" "</span>\
+                     <span class="o">+</span><span class="s">"£{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">price</span><span class="p">)</span><span class="o">+</span><span class="s">" "</span><span class="o">+</span><span class="s">"£{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">itemTotal</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Current Order"</span><span class="p">)</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">receipt</span><span class="p">)</span>
+            <span class="n">totalcost</span><span class="o">=</span><span class="n">totalcost</span><span class="o">+</span><span class="n">itemTotal</span>
+    <span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">itemFound</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+        <span class="n">receipt</span><span class="o">=</span><span class="n">receipt</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="n">gtin</span><span class="o">+</span><span class="s">" product not found"</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">receipt</span><span class="p">)</span>
+    <span class="n">continueOrder</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Order another item (y/n)?"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">continueOrder</span><span class="o">==</span><span class="s">"y"</span><span class="p">:</span>
+        <span class="n">anotherItem</span><span class="o">=</span><span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">anotherItem</span><span class="o">=</span><span class="bp">False</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"Order complete"</span><span class="p">)</span>
+<span class="n">receipt</span><span class="o">=</span><span class="n">receipt</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="o">+</span><span class="s">"Total cost of order £{:.2f}"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">totalcost</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">receipt</span><span class="p">)</span>
+
+</code></pre>
+</div>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing24.png" alt="Testing24" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing25.png" alt="Testing25" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing26.png" alt="Testing26" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing27.png" alt="Testing27" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing28.png" alt="Testing28" /></td>
+      <td><strong>Test 4</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-5---reorder-program">Example 5 - Reorder Program</h2>
+<p>This program reads a file that contains a list of products and how many there are in stock. If the number in stock is low, it works out how many need to be reordered and then creates a new file of the products that need to be reordered as well as how many.</p>
+
+<p><strong>Program code:</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"List of products that are below the reorder level and need to be reordered:"</span><span class="p">)</span>
+<span class="n">itemsforreorder</span><span class="o">=</span><span class="mi">0</span>
+<span class="nb">file</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"catalogue - T3.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+    <span class="n">product</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span><span class="o">&lt;</span><span class="nb">int</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">4</span><span class="p">]):</span>
+        <span class="n">reorderamount</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">" "</span><span class="o">+</span><span class="n">product</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="s">" "</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">reorderamount</span><span class="p">))</span>
+        <span class="n">reorderfile</span><span class="o">=</span><span class="nb">open</span><span class="p">(</span><span class="s">"reorderlist.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+        <span class="n">reorderfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">product</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="n">product</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="s">","</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">reorderamount</span><span class="p">)</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        <span class="n">reorderfile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">itemsforreorder</span><span class="o">=</span><span class="n">itemsforreorder</span><span class="o">+</span><span class="mi">1</span>
+<span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">itemsforreorder</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Reorder file created"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"No products need reordering"</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing30.png" alt="Testing30" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing31.png" alt="Testing31" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing32.png" alt="Testing32" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing33.png" alt="Testing33" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="example-6---updating-staff-information">Example 6 - Updating Staff Information</h2>
+<p>This program updates the number of years a member of staff has been working at the school. When the program runs the user enters their email address, when it finds the person it asks them to enter their number of years teaching. It will then update the file if the person exists in the file.</p>
+
+<p><strong>Program code:</strong></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="n">updateanother</span> <span class="o">=</span> <span class="s">"Y"</span>
+<span class="k">while</span> <span class="n">updateanother</span> <span class="o">==</span> <span class="s">"Y"</span><span class="p">:</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter the email address you are looking for:"</span><span class="p">)</span>
+    <span class="nb">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">,</span><span class="s">"r"</span><span class="p">)</span>
+    <span class="n">alreadyexists</span><span class="o">=</span><span class="bp">False</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="nb">file</span><span class="p">:</span>
+        <span class="n">staff</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">","</span><span class="p">)</span>
+        <span class="n">writefile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"staffupdated.csv"</span><span class="p">,</span><span class="s">"a"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="n">email</span><span class="p">:</span>
+            <span class="n">alreadyexists</span><span class="o">=</span><span class="bp">True</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Current Details:</span><span class="se">\n</span><span class="s">Staff name: "</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">Email Address: "</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">Years Teaching: "</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+            <span class="n">yearsteaching</span> <span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s">"Enter their new number of years teaching: "</span> <span class="p">)</span>
+            <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">staff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">yearsteaching</span><span class="o">+</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">writefile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">staff</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">staff</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+        <span class="n">writefile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="nb">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">"staff.csv"</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">"staffupdated.csv"</span><span class="p">,</span><span class="s">"staff.csv"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">alreadyexists</span><span class="o">==</span><span class="bp">False</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"That staff member's email cannot be found in the file, no changes made"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="s">"Details updated"</span><span class="p">)</span>
+    <span class="n">updateanother</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Would you like to update another staff member? Y/N "</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><strong>Testing Table:</strong></p>
+
+<p><img src="./images/testing34.png" alt="Testing34" /></p>
+
+<p><strong>Testing Evidence:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th><img src="./images/testing35.png" alt="Testing35" /></th>
+      <th><strong>Test 1</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/testing36.png" alt="Testing36" /></td>
+      <td><strong>Test 2</strong></td>
+    </tr>
+    <tr>
+      <td><img src="./images/testing37.png" alt="Testing37" /></td>
+      <td><strong>Test 3</strong></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+        </div>
+
+        <div class="col-md-3 bs-docs-sidebar hidden-print" role="complementary">
+            <ul class="nav bs-docs-sidenav"></ul>
+
+            <a class="back-to-top" id="back-to-top" href="#top"> <i class="glyphicon glyphicon-chevron-up"></i>
+                Back to top
+            </a>
+        </div>
+    </div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017 - v1.1 - Ben Barnes and Tristan Kirkpatrick</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script>
+        trianglify("#67008E", "#5B3293");
+    </script>
+    <script>
+          if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+
+
+
+
+    </body>
+</html>

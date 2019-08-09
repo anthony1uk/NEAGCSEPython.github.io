@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Key Syntax</title>
+<meta name="description"
+      content="">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/docs.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+
+<link rel="stylesheet" href="css/main.css">
+
+
+<link rel="canonical" href="/key-syntax.html">
+<link rel="alternate" type="application/rss+xml" title="J276 NEA Resource Bank" href="/feed.xml">
+
+<style>
+    #jumbotron-header {
+        background: #67008E;
+        background: linear-gradient(135deg, #67008E, #5B3293);
+    }
+</style>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src='assets/js/docs.min.js'></script>
+
+    </head>
+
+    <body>
+        
+<!--
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">OGAT NEA Resource Bank - J276</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+
+
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                        <li >
+                            <a href="/algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="active">
+                            <a href="/key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="/rules.html">Rules</a>
+                        </li>
+                    
+                
+                    
+                
+                    
+                        <li >
+                            <a href="/testing.html">Testing</a>
+                        </li>
+                    
+                
+            </ul>
+
+
+
+        </nav>
+    </div>
+</header>
+-->
+
+<header class="navbar navbar-fixed-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header" role="banner">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">J276 NEA Resource Bank</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                        <li class="active">
+                            <a href="./key-syntax.html">Key Syntax</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./programming.html">Program Examples</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./evidencing.html">Evidencing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./algorithms.html">Algorithms</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./testing.html">Testing</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./debugging.html">Debugging</a>
+                        </li>
+                    
+                
+                    
+                        <li >
+                            <a href="./rules.html">Rules</a>
+                        </li>
+                    
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+        
+    <div class="bs-docs-header" id="jumbotron-header">
+        <div class="container">
+            <h1>Key Syntax</h1>
+            <p></p>
+        </div>
+    </div>
+
+
+
+        <div class="container ">
+    <div class="" role="main"><h1 id="key-syntax">Key Syntax</h1>
+
+<p>Below is a summary of the key commands you may need in your controlled assessment as well as examples of them being used:</p>
+<table class="table">
+<tr>
+	<td><b>Command</b></td>
+	<td><b>Description</b></td>
+	<td><b>Example of Use</b></td>
+</tr>
+<tr>
+	<td><pre lang="python">print()</pre></td>
+	<td>Used to output text to screen</td>
+	<td><pre lang="python">print("Hello World")</pre>If you wish to join a string to a variable, you can use a + or a , like below: <br />
+	<pre lang="python">
+name = “Bob”
+print(“Hello “ + name)
+print(“Hello”,name)</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">input()</pre></td>
+	<td>Used to take input from a user, if you wish to store this input you need to assign it to a variable</td>
+	<td><pre lang="python">input(“What is your name”)</pre>If you want to assign to a variable, it needs to be:<br />
+	<pre lang="python">variableName = input(“Text to display”)</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">\n</pre></td>
+	<td>Creates a new line inside a print command.</td>
+	<td><pre lang="python">
+print(“This is line 1 \nThis is line 2”)
+print(“Name: “ + name + “\nAge:” + age)</pre><b>NOTE:</b> The \n must always be inside quote marks</td>
+</tr>
+<tr>
+	<td><pre lang="python">str()</pre></td>
+	<td>Converts a variable to a string, should be used in a print command to convert a variable that is not a string back to a string</td>
+	<td><pre lang="python">str(variableName)</pre>If used in a print command:<br />
+	<pre lang="python">
+total = number1 + number2
+print(“The total is “ + str(total))
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">int()</pre></td>
+	<td>Converts a variable to an integer.</td>
+	<td><pre lang="python">int(variableName)</pre>For example:<br />
+	<pre lang="python">
+total = int(number1) + int(number2)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">float()</pre></td>
+	<td>Converts a variable to a real number.</td>
+	<td><pre lang="python">float(variableName)</pre>For example:<br />
+	<pre lang="python">
+total = float(number1) + float(number2)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">round()</pre></td>
+	<td>Rounds a variable to the number of decimal places specified.</td>
+	<td><pre lang="python">round(variableName,dp)</pre>where dp is the number of decimal places. <br />For example:<br />
+	<pre lang="python">
+total = float(round(number1,2))
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">
+if condition:
+   DO IF TRUE
+else:
+   DO IF FALSE
+</pre></td>
+	<td>An IF statement which checks a condition and then does one of two things</td>
+	<td><pre lang="python">
+if age==15:
+   print(“You can go to the party”)
+else:
+   print(“You cannot go to the party”)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">
+if condition:
+   DO IF TRUE
+elif condition:
+   DO IF TRUE
+else:
+   DO IF FALSE
+</pre></td>
+	<td>An if statement that makes use of elif to check two conditions, it will do one thing if the first condition is true, something else if the second condition is true, and if neither are two will do the false part.</td>
+	<td><pre lang="python">
+if number1&gt;number2:
+   print(“Number 1 is bigger”)
+elif number2&gt;number1:
+   print(“Number 2 is bigger”)
+else:
+   print(“The numbers are the same”)
+</pre></td>
+</tr>
+<tr>
+	<td><pre lang="python">
+for x in range(a,b):
+   code to loop
+code to execute after the loop
+</pre></td>
+	<td>This is a for loop that will repeat the code inside of it a set number of times. A is the number at which the loop starts, B is the number at which the loop ends.</td>
+	<td><pre lang="python">
+for x in range(0,10):
+   number = int(input(“Enter a number”))
+   total  = total + number
+</pre>This program will loop ten times. Inside the loop each time it will ask for a number and add to the total. <br /><b>NOTE:</b> The indent</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+while CONDITION TRUE:
+   code to loop
+code to execute after the loop
+</pre></td>
+	<td>This is a while loop that will repeat the code inside of it while a condition is met. The condition can be anything you want.</td>
+	<td><pre lang="python">
+while age&lt;18:
+   age = int(input(“Please enter an age:”)
+print(“You are old enough to see the film”)
+</pre>This while loop will repeat while the age is less than 18. Every time the user enters an age if they enter a number less than 18 it will ask them again. When they enter an age over 18 it will then display the print command that comes after the loop.</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+ListName = list()
+</pre></td>
+	<td>This will create a blank list with the name of your choice. A list can store multiple pieces of data under a single variable name.</td>
+	<td><pre lang="python">
+names = list()
+</pre>This will create a blank list called names that can then store multiple names when they are appended (added) to it.</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+ListName.append(data)
+</pre></td>
+	<td>This will append the data that is in the brackets to the list. Append means add it to the list.</td>
+	<td><pre lang="python">
+names = list()
+names.append(“Bob”)
+names.append(“Sally”)
+print(names[1])
+</pre>This code will create a blank list called names and then add the names Bob and Sally to it.
+The print command at the end would print Sally as lists start at zero. The second name in the list is Sally which would be stored in element 1. <br /><b>NOTE:</b> the square brackets for the element of the list.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+ceil(number)
+</pre></td>
+	<td>This function rounds up a number to the nearest whole number. This is part of the math library</td>
+	<td><pre lang="python">
+from math import *
+number = float(input(“Enter a decimal number”))
+roundup = ceil(number)
+print(roundup)
+</pre>When using the ceil function you must import the math library, the first line of code at the top does this.
+This program takes a decimal input from the user, then uses ceil to round it up to the next whole number and then prints it. E.g. if the user entered 5.345 it would print 6.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable = open(“filename”,”r”)
+</pre></td>
+	<td>This will open a file in read mode.</td>
+	<td><pre lang="python">
+file = open(“staff.csv”,”r”)
+</pre>This will open a file called staff.csv in read mode with the variable name file.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable = open(“filename”,”r”)
+for line in file:
+   DO THIS CODE
+</pre>
+line 2 being explained</td>
+	<td>This will create a loop that will repeat for each line in the file.</td>
+	<td><pre lang="python">
+file = open("staff.csv","r")
+for line in file:
+   print(line)
+</pre>This will open a file called staff.csv in read mode and then read each line in the file. It will then print the line that it has read and repeat this until all lines have been read.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable = open(“filename”,”r”)
+for line in file:
+   variable = line.split(“,”)
+</pre>
+line 3 being explained</td>
+	<td>This will read a line from the file and split the contents of the line every time it finds a comma in a different element of the list/array.</td>
+	<td><pre lang="python">
+file = open("staff.csv","r")
+for line in file:
+   details = line.split(",")
+   print(details[0])
+</pre>This will open a file called staff.csv in read mode and then loop through the file. Each time through the loop it will read a line and split the contents of the line every time it reaches a comma into a different element of the list/array. It will then print whatever is in element 0 of that array. i.e. the first piece of data before the first comma.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable = open(“filename”,”r”)
+for line in file:
+   variable = line.split(“,”)
+   if CONDITION:
+      DO IF MET
+</pre>
+line 4&amp;5 being explained</td>
+	<td>An if can be used to check pieces of data stored in the list/array and see if it matches what you want. You can then program it to respond in a particular way if it does.</td>
+	<td><pre lang="python">
+email = input("Enter the staff email address: ")
+file = open("staff.csv","r")
+for line in file:
+   details = line.split(",")
+   if details[2]==email:
+      print(“Match found”)
+</pre>This code will do what the previous code did, but check to see if what is in element 2 of the list/array details matches the email address entered by the user. If it does it will say “Match found”
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable.close()
+</pre></td>
+	<td>This will close the variable that has created the connection to the file.</td>
+	<td><pre lang="python">
+file = open("staff.csv","r")
+file.close()
+</pre>This will close the connection to the file that it has just opened.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable = open(“filename”,”a”)
+</pre></td>
+	<td>This will open a file in append mode.</td>
+	<td><pre lang="python">
+writefile = open(“staff.csv”,”a”)
+</pre>This will open a file called staff.csv in append mode with the variable name writefile. Append mode means ‘add’ to the file.
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+variable = open(“filename”,”r”)
+variable.write(data to write)
+</pre>line 2 being explained</td>
+	<td>This will write data to a file.</td>
+	<td><pre lang="python">
+writefile = open("staff.csv","r")
+writefile.write(“Bob” + “,” + “Barnes” + “,” +
+ “Outwood Grange Academy”)
+</pre>This will open a file called staff.csv in append mode. It will then write to the file the name of the staff member and the school they work at. You can also write variables to the file, like so:
+<pre lang="python">
+firstname = input(“Enter your firstname “)
+surname = input(“Enter your surname “)
+school = input(“Enter your school “)
+writefile = open("staff.csv","r")
+writefile.write(firstname + “,” + surname + “,” + school)
+</pre><b>NOTE:</b> The use of a comma (,) to separate each piece of data
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+def functionname():
+   CODE to run in function
+</pre></td>
+	<td>This will define a function that has no values passed into it.</td>
+	<td><pre lang="python">
+def hello():
+   print(“Hello from a function”)
+hello()
+</pre>This code creates a function called hello. Inside that function it has some code that says to print a message. After the function, in the main program it is called by typing the name of the function followed by two brackets ().
+</td>
+</tr>
+<tr>
+	<td><pre lang="python">
+def functioname(parameters):
+   CODE to run in function
+   return variable/value
+</pre></td>
+	<td>This will define a function that has a parameter passed into it to be used in the function. It also has a return value. <b>NOTE:</b> With a function you do not have to have a return value.</td>
+	<td><pre lang="python">
+def multiply(a,b):
+   answer = a * b
+   return answer
+
+num1 = 10
+num2 = 9
+print(multiply(num1,num2))
+</pre>This code creates a function called multiply and has 2 values passed into it that are referred to as <b>a</b> and <b>b</b>. Inside the function it multiplies to the two together and returns the answer back to the main program. The main program below has two variables <b>num1</b> and <b>num2</b>. It passes these values into the function and prints the result.<pre lang="python">
+<pre lang="python">
+def age(x):
+   if x &gt; 18:
+      print(“Old enough to watch film”
+   else:
+      print(“Not old enough to watch film”)
+
+age = input(“Enter your age “)
+age(age)
+</pre></pre>This code uses a function and passes a parameter/value into it, however it does not return anything back to the main program.</td></tr>
+<tr>
+	<td><pre lang="python">
+variable = “text”
+print(variable[x])
+</pre></td>
+	<td>This is used to access characters in a string, by replacing the x for the character number you want.</td>
+	<td><pre lang="python">
+word = “Hello World”
+letter = word[0]
+print(letter)
+</pre>The code will access the first character <b>(0)</b> from the word variable and print the letter. In this example it would print <b>“H”</b></td></tr>
+
+<tr>
+	<td><pre lang="python">
+variable.startswith(‘x’)
+</pre></td>
+	<td>This checks if the variable starts with a particular character</td>
+	<td><pre lang="python">
+word = “Hello World”
+word.startswith(“W”)
+</pre>This code would return <b>False</b> as the variable word does not start with a capital <b>W</b></td></tr>
+<tr>
+	<td><pre lang="python">
+len(variable)
+</pre></td>
+	<td>This is used to find the length of a variable</td>
+	<td><pre lang="python">
+word = “Hello World”
+len(word)
+</pre>The <b>len()</b> function will return the value 11 as there are 11 characters (including spaces)</td></tr>
+<tr>
+	<td><pre lang="python">
+variable.count(‘x’)
+</pre></td>
+	<td>This is used to count how many times a character appears in a string.</td>
+	<td><pre lang="python">
+word = “Hello World”
+print(word.count(‘o’))
+</pre>This code would return the value <b>2</b>, as it counts the number of <b>‘o’s</b> in the variable word.</td></tr>
+<tr>
+	<td><pre lang="python">
+variable[start:end]
+</pre></td>
+	<td>This is used to get a certain number of characters in a variable</td>
+	<td><pre lang="python">
+word = “Hello World”
+#gets the first three characters i.e. Hel
+print(word[0:3])
+#gets the last three characters i.e. rld
+print(word[-3:])
+#gets all but the last three characters #i.e. Hello Wo
+print(word[:-3])
+</pre></td></tr>
+<tr>
+	<td><pre lang="python">
+variable.upper()
+</pre></td>
+	<td>This is used to change the case of a string to upper case</td>
+	<td><pre lang="python">
+string = “Hello World”
+print(string.upper())
+</pre>This code would display <b>HELLO WORLD</b> on screen</td></tr>
+<tr>
+	<td><pre lang="python">
+variable.lower()
+</pre></td>
+	<td>This is used to change the case of a string to lower case</td>
+	<td><pre lang="python">
+string = “Hello World”
+print(string.lower())
+</pre>This code would display <b>hello world</b> on screen
+</td></tr>
+<tr>
+	<td><pre lang="python">
+variable.isalnum()
+</pre></td>
+	<td>This checks if the variable only contains alpha numeric characters</td>
+	<td><pre lang="python">
+word = “Hello World”
+word.isalnum()
+</pre>This code would return <b>False</b> as the variable word contains a space which is not an alphabetic character</td></tr>
+<tr>
+	<td><pre lang="python">
+variable.isalpha()
+</pre></td>
+	<td>This checks if the variable only contains alphabetic characters</td>
+	<td><pre lang="python">
+word = “Hello World”
+word.isalpha()
+</pre>This code would return <b>False</b> as the variable word contains a space which is not an alphabetic character</td></tr>
+<tr>
+	<td><pre lang="python">
+variable.isdigit()
+</pre></td>
+	<td>This checks if the variable only contains digits</td>
+	<td><pre lang="python">
+number = 12345
+number.isdigit()
+</pre>This code would return <b>True</b> as the variable number contains only digits</td></tr>
+<tr>
+	<td><pre lang="python">
+variable.endswith(‘x’)
+</pre></td>
+	<td>This checks if the variable ends with a particular character</td>
+	<td><pre lang="python">
+word = “Hello World”
+word.endswith(“W”)
+</pre>This code would return <b>False</b> as the variable word does not end with a capital <b>W</b></td></tr>
+<tr>
+	<td><pre lang="python">
+fabs(variable)
+</pre></td>
+	<td>This finds the absolute value of a variable i.e. removes any negative</td>
+	<td><pre lang="python">
+from math import *
+number = -45.65
+answer = fabs(number)
+print(answer)</pre>This code would return <b>45.65</b> as <b>fabs()</b> removes any negative from a number</td></tr>
+<tr>
+	<td><pre lang="python">
+ceil(variable)
+</pre></td>
+	<td>This finds the next whole number up from the number entered</td>
+	<td><pre lang="python">
+from math import *
+number = 45.23
+answer = ceil(number)
+print(answer)</pre>This code would return <b>46</b> as <b>ceil()</b> always rounds up to the next whole number</td></tr>
+<tr>
+	<td><pre lang="python">
+floor(variable)
+</pre></td>
+	<td>This finds the next whole number down from the number entered</td>
+	<td><pre lang="python">
+from math import *
+number = 45.78
+answer = floor(number)
+print(answer)</pre>This code would return <b>45</b> as <b>floor()</b> always rounds down to the next whole number</td></tr>
+<tr>
+	<td><pre lang="python">
+sqrt(variable)
+</pre></td>
+	<td>This finds square root of a variable</td>
+	<td><pre lang="python">
+from math import *
+number = 16
+answer = sqrt(number)
+print(answer)</pre>This code would return <b>4</b> as <b>sqrt()</b> square roots a number, the square root of 16 is 4.</td></tr>
+<tr>
+	<td><pre lang="python">
+ceil(variable / 10) * 10
+</pre></td>
+	<td>This finds the next higher multiple of 10 from the value in the variable.</td>
+	<td><pre lang="python">
+from math import *
+number = 16
+answer = ceil(number / 10) * 10
+print(answer)</pre>This code would return <b>20</b> as the next multiple of 10 from 16 is 20.</td></tr>
+</table>
+</div>
+
+    
+</div>
+
+
+        <footer class="bs-docs-footer" role="contentinfo">
+    <div class="container">
+        <div class="bs-docs-social">
+            <ul class="bs-docs-social-buttons">
+                
+            </ul>
+        </div>
+
+        <p>
+            OGAT Computer Science 2017 - v1.1 - Ben Barnes and Tristan Kirkpatrick</a>
+        </p>
+        <p>
+        </p>
+
+
+    </div>
+</footer>
+
+
+    <script src="js/d3.min.js"></script>
+    <script src="js/trianglify.min.js"></script>
+    <script>
+        trianglify("#67008E", "#5B3293");
+    </script>
+    <script>
+          if ($('#back-to-top').length) {
+          var scrollTrigger = 100, // px
+              backToTop = function () {
+                  var scrollTop = $(window).scrollTop();
+                  if (scrollTop > scrollTrigger) {
+                      $('#back-to-top').addClass('show');
+                  } else {
+                      $('#back-to-top').removeClass('show');
+                  }
+              };
+          backToTop();
+          $(window).on('scroll', function () {
+              backToTop();
+          });
+          $('#back-to-top').on('click', function (e) {
+              e.preventDefault();
+              $('html,body').animate({
+                  scrollTop: 0
+              }, 700);
+          });
+      }
+      </script>
+
+
+
+
+
+    </body>
+</html>
